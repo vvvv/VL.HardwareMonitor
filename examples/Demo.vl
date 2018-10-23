@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Kt7CCSxqOIfPeyt43k6RCi" Version="0.93">
+  <Patch Id="I2s0JAiCaS3LGAT9yCTpur">
+    <Canvas Id="LawPxCk3tjPN3iNETCDN0e" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ Root ************************
+
+-->
+      <Node Name="Root" Bounds="200,200" Id="JfXZGsA1WAYLHuJaXjDzeb">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="VQcMsJW6JXaMlOj7BBF8Ir">
+          <Canvas Id="OoxEI8DwUX1OcsTfQ0nZfS" CanvasType="Group">
+            <Node Bounds="132,159,106,13" Id="QFUxiS1wqU8PDFgPQg35nP">
+              <p:NodeReference LastCategoryFullName="System" LastSymbolSource="VL.HardwareMonitor.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HardwareMonitor" />
+              </p:NodeReference>
+              <Pin Id="BfyDgqhxaliMJ6pDSS5aY9" Name="Enable CPU" Kind="InputPin" />
+              <Pin Id="DoATxbNVXJ1POAJUmGegsl" Name="Enable GPU" Kind="InputPin" DefaultValue="true">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="EMojhtuHPeANfbW0c8Xzxm" Name="Enable HDD" Kind="InputPin" />
+              <Pin Id="HnaJJR6pNMzMfPLoFZn3wh" Name="Enable Mainboard" Kind="InputPin" />
+              <Pin Id="LnLBqEE1rfJMz5nesW7XTW" Name="Hardware" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="132,369,104,13" Id="KkoF9lTHfwPPescq3ynyhp">
+              <p:NodeReference LastCategoryFullName="System" LastSymbolSource="VL.HardwareMonitor.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="GetHardwareInfo" />
+              </p:NodeReference>
+              <Pin Id="RHMlYciC0WbMHo2l1uuucm" Name="Input" Kind="InputPin" />
+              <Pin Id="O7d5LU97KWQQCXiS98LDN8" Name="Type" Kind="InputPin" />
+              <Pin Id="GiziB9oHpTnN78x70ury37" Name="Index" Kind="InputPin" />
+              <Pin Id="UriqPWEkCyLPHjdZQXgtgq" Name="Sensor Type" Kind="InputPin" DefaultValue="&quot;Power&quot;">
+                <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                  <Choice Kind="TypeFlag" Name="SensorType" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="PDB8uH0hKucORvms8N9ap6" Name="Update" Kind="InputPin" />
+              <Pin Id="OQgBYtVXC48MCo0crP9ZQI" Name="Sensor Names" Kind="OutputPin" />
+              <Pin Id="LTHU4dELkamMHWa2QXvyrw" Name="Sensor Values" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JRZAzZGV9pJOGAOAya7TWE" Comment="Sensor Values" Bounds="332,472,91,30" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="NClxkz6HrtpNu2wyo5D2A3" Comment="Sensor Names" Bounds="135,471,90,30" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="HKkawClQUzMNjBng2zXSgc" Comment="Update" Bounds="233,340,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="552,367,104,13" Id="GE7CnoNuibONHTslNFMkui">
+              <p:NodeReference LastCategoryFullName="System" LastSymbolSource="VL.HardwareMonitor.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="GetHardwareInfo" />
+              </p:NodeReference>
+              <Pin Id="Nh2mLOQiKJBM2jbampx7C6" Name="Input" Kind="InputPin" />
+              <Pin Id="NQ7qbMOyEG0QARPjLR5jRs" Name="Type" Kind="InputPin" DefaultValue="&quot;GpuNvidia&quot;">
+                <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                  <Choice Kind="TypeFlag" Name="HardwareType" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="RdX6BJmQxfDLwSPIYkY5LQ" Name="Index" Kind="InputPin" />
+              <Pin Id="BqVi3vCmYMvMup5GP9bO6w" Name="Sensor Type" Kind="InputPin" DefaultValue="&quot;Power&quot;">
+                <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                  <Choice Kind="TypeFlag" Name="SensorType" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="GMT8TnGG3JsLMxmW6ZYyHb" Name="Update" Kind="InputPin" />
+              <Pin Id="C65UIRrhvUuPDHIntNxsSJ" Name="Sensor Names" Kind="OutputPin" />
+              <Pin Id="CEBo4Z61ahDNPZo87wW4my" Name="Sensor Values" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Jdx0uam4ek0Pmy7PaS9QRM" Comment="Sensor Values" Bounds="752,470,91,30" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="C53WaDb13qZQHcjkJyk8Sb" Comment="Sensor Names" Bounds="555,469,90,30" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="QEI5m35dntDOvDHlCB1NpC" Comment="Update" Bounds="653,334,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="UHwT6IIMEIjPTRQBSq5awW" Comment="Sensor Type" Bounds="208,303,84,19" ShowValueBox="true" isIOBox="true" Value="&quot;Temperature&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="SensorType" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Lduf6ELGNQ6PMv8nM1QwAq" Bounds="242,167,315,22" ShowValueBox="true" isIOBox="true" Value="&quot;&lt; enable parts of the system you want to monitor&quot;">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="KaS0Y3gMUJLQMe1wpKfGYq" Comment="Type" Bounds="160,273,92,19" ShowValueBox="true" isIOBox="true" Value="&quot;CPU&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="HardwareType" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="S78q5VL9aasOiMGgCWdQl1" Comment="Type" Bounds="578,277,92,19" ShowValueBox="true" isIOBox="true" Value="&quot;GpuNvidia&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="HardwareType" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="TqUigQWhQPPNUZeLi6FF9s" Comment="Sensor Type" Bounds="629,308,84,19" ShowValueBox="true" isIOBox="true" Value="&quot;Temperature&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="SensorType" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LDVEK4rCNgxPajW0iJ2Yw4" Bounds="243,215,375,62" ShowValueBox="true" isIOBox="true" Value="&quot;NOTE: \r\n- not all hardware and sensor types seem to work\r\n- some need the program to be started with admin rights&quot;">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <Patch Id="INDC69KYz0dMr64Ghj2MVR" Name="Create" />
+          <Patch Id="Pb7zAMZcxsrNegRF0F7bgk" Name="Update" />
+          <ProcessDefinition Id="LJAoFgq02JEMwGMFvPHgsG">
+            <Fragment Id="A45u7jTt322MTVdU57G85x" Patch="INDC69KYz0dMr64Ghj2MVR" Enabled="true" />
+            <Fragment Id="VsMGq2BKPbIOLJZ5slRqJ1" Patch="Pb7zAMZcxsrNegRF0F7bgk" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="THVr8Unq9VdOqbVgYeXLGG" Ids="LnLBqEE1rfJMz5nesW7XTW,RHMlYciC0WbMHo2l1uuucm" />
+          <Link Id="Hm6rDm5ffHINzJ58Z2NZWo" Ids="LTHU4dELkamMHWa2QXvyrw,JRZAzZGV9pJOGAOAya7TWE" />
+          <Link Id="BAyuQZCul6RMyN6jeLvtgM" Ids="OQgBYtVXC48MCo0crP9ZQI,NClxkz6HrtpNu2wyo5D2A3" />
+          <Link Id="V6N9KIzugQhNCLkbWqundE" Ids="CEBo4Z61ahDNPZo87wW4my,Jdx0uam4ek0Pmy7PaS9QRM" />
+          <Link Id="K8Vn2gYOGM8M2oOZqAyTSd" Ids="C65UIRrhvUuPDHIntNxsSJ,C53WaDb13qZQHcjkJyk8Sb" />
+          <Link Id="SaMNvbbgE8YNqdytmSsPyN" Ids="LnLBqEE1rfJMz5nesW7XTW,Nh2mLOQiKJBM2jbampx7C6" />
+          <Link Id="R0asZY8toQxOjQs5jVcrkd" Ids="UHwT6IIMEIjPTRQBSq5awW,UriqPWEkCyLPHjdZQXgtgq" />
+          <Link Id="CvdCdatVlKnM65oBHH2T8O" Ids="KaS0Y3gMUJLQMe1wpKfGYq,O7d5LU97KWQQCXiS98LDN8" />
+          <Link Id="HumqjN9bpnZPfjVezIEWDd" Ids="S78q5VL9aasOiMGgCWdQl1,NQ7qbMOyEG0QARPjLR5jRs" />
+          <Link Id="UhqulgXQrevMSbQRqho7KI" Ids="TqUigQWhQPPNUZeLi6FF9s,BqVi3vCmYMvMup5GP9bO6w" />
+          <Link Id="OWZGnFS5WaoMdlP3lYlUwc" Ids="HKkawClQUzMNjBng2zXSgc,PDB8uH0hKucORvms8N9ap6" />
+          <Link Id="U5RuFYRFrnJOL4cH3apGNJ" Ids="QEI5m35dntDOvDHlCB1NpC,GMT8TnGG3JsLMxmW6ZYyHb" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <NugetDependency Id="PeqkX6oHO2yP1LI59LWodJ" Location="VL.CoreLib" Version="0.93.71-g2860854c35" />
+  <DocumentDependency Id="Kax0WkovAJSNaMXy3kMucp" Location="../VL.HardwareMonitor.vl" />
+</Document>

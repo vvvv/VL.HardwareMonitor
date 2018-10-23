@@ -1,156 +1,505 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="SFmdtsNO103MCgDZgzHQK9" Version="0.94">
-  <NugetDependency Id="HZesh6zEzOHM5ncO4ngZLR" Location="VL.CoreLib" Version="0.94.43" />
-  <Patch Id="DPNR0uiZmOxMVd15HNzRlE">
-    <Canvas Id="Kn0H4vJinKdOP5tOdUSLzp" DefaultCategory="System.HardwareMonitor" CanvasType="FullCategory">
+<Document xmlns:p="property" Id="DulD1h04j4MLgrnPG0wfwm" Version="0.93">
+  <Patch Id="GDbpnUnWR78PzhHHNEqlCk">
+    <Canvas Id="SgBG6X8qhsELaLh70Ou0rk" DefaultCategory="System" CanvasType="FullCategory">
       <!--
 
-    ************************ Root ************************
+    ************************ HardwareMonitor ************************
 
 -->
-      <Node Name="Root" Bounds="272,254" Id="S6AalYRrWQbQabP3TsnCLs">
+      <Node Name="HardwareMonitor" Bounds="301,156" Id="TE2AEyBY8NgMPIeG659TAs">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <Patch Id="RbVqVydw12SN7ApPI7wxXI">
-          <Canvas Id="NYLIC46uFjDNjvyffItvNR" CanvasType="Group">
-            <Pad Id="RvWqRUpCl7nNhLjPFLy5sj" SlotId="QoZSp4ugHpkNajcbJWCvQu" Bounds="555,439" />
-            <Node Bounds="516,542,100,129" Id="D8e4aQNMaUXNq4oP3Are9K">
+        <Patch Id="Fu2m2lGwVJHNZPsxlGc1hj">
+          <Canvas Id="Q2YznlTXN1pNIstIhdv4z1" CanvasType="Group">
+            <Node Bounds="343,218,44,22" Id="Ctj9FOIPEZhOHgnPc6fXso">
+              <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Computer" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="Hryrx1Tit7HNIvPUpKTq00" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="H4qvvYUo9tyQAaaQV8KgQ4" SlotId="HqOpS2BSqLvLLH2klfuaYB" Bounds="346,311" />
+            <Node Bounds="343,263,44,22" Id="IyzGgFPQoHeOWphH4MVGCh">
+              <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Open" />
+              </p:NodeReference>
+              <Pin Id="NOtDicpeI97Nkb2y3UVuLj" Name="Input" Kind="StateInputPin" />
+              <Pin Id="K66YIImYgEwPMlN41jXhI2" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="231,359,44,22" Id="NbJG2Z7QlhtQKiDDDuHO1b">
+              <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Close" />
+                <CategoryReference Kind="AssemblyCategory" Name="Computer" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="Vk3xYP0XIIOL4uLt6iZ4rm" Name="Input" Kind="StateInputPin" />
+              <Pin Id="N1dAXtVfHblLIwlv53c1Yz" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="NHumWKSP1W1ONYVD4jjAQd" Bounds="417,633" />
+            <ControlPoint Id="SzRa2Ud5BuWNheHRmDiHn9" Bounds="442,307" />
+            <ControlPoint Id="B9Qdrx8ty58P4kDEmxvR3V" Bounds="519,307" />
+            <ControlPoint Id="IUPORbvYyKLOZ3kaoGuaXO" Bounds="602,307" />
+            <ControlPoint Id="SPKQnerShXZNicORR6Olxf" Bounds="687,307" />
+            <Node Bounds="360,355,241,237" Id="TVwZUXUhahOOR68KlrEycw">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <Choice Kind="ApplicationStatefulRegion" Name="Cache" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
-              <Pin Id="P8q6jfZddJeN0tBcFku5cw" Name="Condition" Kind="InputPin" />
-              <Patch Id="NVj5EhbaClCODd4OFj8WEd" ManuallySortedPins="true">
-                <Node Bounds="528,565,34,22" Id="KB3qOgpO3wtOeH1mTPmGgg">
-                  <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
+              <Pin Id="H249eUqxZyzMSfqDH6kRWf" Name="Force" Kind="InputPin" />
+              <Pin Id="VzRjYrWI2yWQRlDis2ZReA" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="AZbDWg61W1iQcB01Xrfv9G" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="DCKqWkBbdCePMhhJDNK37E" ManuallySortedPins="true">
+                <Patch Id="KFLu2Oi1WbsOilQBTeI4Vw" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Gfssl4FqBINMrCyTjwTOVU" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="372,550,53,22" Id="ENrM08CEDPYOgTODzeiaBY">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Close" />
-                    <CategoryReference Kind="AssemblyCategory" Name="Form" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Computer" />
+                    <Choice Kind="OperationCallFlag" Name="Hardware" />
                   </p:NodeReference>
-                  <Pin Id="It7MPLDCnE3LKy7XemnNe6" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="PJbTK2ARzPhOtuoTAQcwSU" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="PbJ2vGq5IiQPBD85STV2oX" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DWxaNpnv7FHOADESWoKxKX" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="CkW8g6WQwQCMn7pK7WFZV5" Name="Hardware" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="554,629,50,22" Id="DnikiC77GpnLIqhX1WgRtU">
-                  <p:NodeReference LastCategoryFullName="Primitive.IDisposable" LastSymbolSource="CoreLibBasics.vl">
+                <Node Bounds="373,384,78,22" Id="NcPMlXLMeRGPXBiBA941QU">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Dispose" />
-                    <CategoryReference Kind="MutableInterfaceType" Name="IDisposable" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetCPUEnabled" />
                   </p:NodeReference>
-                  <Pin Id="Cu74857Bj6nOIKuYzXvm09" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="IVybpSb4BP4L6gijLDSAmh" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LxoZCdm8PuMLcfbj6c8dIx" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="L4SUVCFohXpPBRz5FTw7lK" Name="Value" Kind="InputPin" DefaultValue="true">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="UeHm21ttPoVPbkZI2wSoLb" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Patch Id="CAZQDsRXv5tMqKrSyJgbrb" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="P4WMOfjetwMNKXu3rS6vdm" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="373,421,78,22" Id="TpMM1tsiiBzLDHkNS9j8wH">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetGPUEnabled" />
+                  </p:NodeReference>
+                  <Pin Id="SeWphGpjwhTMoMqc06gyw8" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="SeDZobc4MYqOD1zSSsaedo" Name="Value" Kind="InputPin" DefaultValue="true">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="MHPLerd3RBUO94ZwiHwJCe" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="373,459,81,22" Id="BOgTpD0uvq2MEbfFhVZ64g">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetHDDEnabled" />
+                  </p:NodeReference>
+                  <Pin Id="BSC8q9m7NwIMkkEpCDDt69" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="PqyQgqZx0oFP26EmWE7v4T" Name="Value" Kind="InputPin" />
+                  <Pin Id="IShM1BUJR9pLFge67n6VxN" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="373,509,109,22" Id="LGJha9GySsvMjEbbb5KRqQ">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetMainboardEnabled" />
+                  </p:NodeReference>
+                  <Pin Id="DWf3LhyAMT5NzwJWG151oZ" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IUtVKv46Qh1PjHzgbJNgUn" Name="Value" Kind="InputPin" />
+                  <Pin Id="KSv0xMajgi9LLa4rl0e56Z" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Patch>
+              <ControlPoint Id="VdovG9ZaPcjPfys5cNqw2S" Bounds="422,586" Alignment="Bottom" />
+              <ControlPoint Id="GfrBvdbPMmHMCkpKNxyDRr" Bounds="454,361" Alignment="Top" />
+              <ControlPoint Id="KIVZKdGz9E0LHxSBBDFdYb" Bounds="491,361" Alignment="Top" />
+              <ControlPoint Id="FOfNeXht6XCPaxc3ggUat2" Bounds="539,361" Alignment="Top" />
+              <ControlPoint Id="VQxZ9ubES3WM7EoiWISmpd" Bounds="578,361" Alignment="Top" />
             </Node>
-            <Node Bounds="519,493" Id="PYsWEpAfdtBOsPAGda5Avp">
-              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
-              </p:NodeReference>
-              <Pin Id="EKe8hSrIDDVOYWasqpjF5b" Name="X" Kind="InputPin" />
-              <Pin Id="Eppar8E3UmAOjRGaxzmFAJ" Name="Result" Kind="OutputPin" />
-              <Pin Id="BLeNd1gQAfeMjX6k3fIXxn" Name="Not Assigned" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="758,430,68,86" Id="OIMd2KGtBjPNxDJ8Ljielr">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:NodeReference>
-              <Pin Id="DaOPFL1xKYrPvhrvUyHKgb" Name="Force" Kind="InputPin" />
-              <Pin Id="Dn0Q4QPVOb5K9VhjsrLm45" Name="Dispose Cached Outputs" Kind="InputPin" />
-              <Pin Id="SRxBSfz1kAQMaNmRYq5k7U" Name="Has Changed" Kind="OutputPin" />
-              <Patch Id="GnMbwMt0Z0YQcCOMCIlYE2" ManuallySortedPins="true">
-                <Patch Id="KoY53ivHWdsOHclbtTMGHE" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="Rhs5pe4XvgLLWovtan8Gdk" Name="Then" ParticipatingElements="PIeuXGePfikMktL4dql7Cq" ManuallySortedPins="true" />
-                <Node Bounds="770,466,44,22" Id="PIeuXGePfikMktL4dql7Cq">
-                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.GUI.MainForm" LastSymbolSource="OpenHardwareMonitor.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="MainForm" />
-                    <Choice Kind="OperationCallFlag" Name="Create" />
-                  </p:NodeReference>
-                  <Pin Id="S169u9InjZEMzPQiAtWyqQ" Name="Output" Kind="StateOutputPin" />
-                </Node>
-              </Patch>
-              <ControlPoint Id="PaL3yBzCJZQQBFtN32k3Ue" Bounds="781,510" Alignment="Bottom" />
-            </Node>
-            <Pad Id="Bj0I61fPRfsPQciCm87Oqb" Comment="Dispose Cached Outputs" Bounds="823,400,40,19" ShowValueBox="true" isIOBox="true" Value="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="T2tl2HROmQMP1aUhJh4aiv" Comment="Force" Bounds="758,343,40,19" ShowValueBox="true" isIOBox="true" Value="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-              </p:ValueBoxSettings>
-            </Pad>
           </Canvas>
-          <Patch Id="ARnzaovUaXDOiKqW8XBKaV" Name="Create" />
-          <Patch Id="QN9xkJ9u8rsOsOLz3gEuTH" Name="Update" />
-          <ProcessDefinition Id="Iah5YysXGH5MHs9o90JmfX">
-            <Fragment Id="FEfeDRYs5wGOxIlEMEVzyP" Patch="ARnzaovUaXDOiKqW8XBKaV" Enabled="true" />
-            <Fragment Id="OKtGtk863PUNsbn4BRlI1O" Patch="QN9xkJ9u8rsOsOLz3gEuTH" Enabled="true" />
+          <Patch Id="DlB0IjJCQozLfbTu047UzX" Name="Create" ParticipatingElements="Ctj9FOIPEZhOHgnPc6fXso" />
+          <Patch Id="U6x7KsJjcHmPjIX6cr9NBn" Name="Update">
+            <Pin Id="O5PZO7s5n6GOp7QvhjvCc2" Name="Hardware" Kind="OutputPin" Bounds="566,507" />
+            <Pin Id="Hg7zSd5rbykNnQLCZV7Nkl" Name="Enable CPU" Kind="InputPin" Bounds="604,299" DefaultValue="true">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="EJP1rHdqixDPTjega23b9I" Name="Enable GPU" Kind="InputPin" Bounds="651,327" />
+            <Pin Id="K5s0OFo8Re9MBMkpH7GGCM" Name="Enable HDD" Kind="InputPin" Bounds="648,438" />
+            <Pin Id="CBtiAPkCsRtOcl0X1nc2fO" Name="Enable Mainboard" Kind="InputPin" Bounds="646,504" />
+          </Patch>
+          <ProcessDefinition Id="DZ7CCZLR6kZNqlAwLaF1W4">
+            <Fragment Id="C6S9FL4pZywOGhGNB1kbqD" Patch="DlB0IjJCQozLfbTu047UzX" Enabled="true" />
+            <Fragment Id="DbkQL2dV7JDQdagnXJgxyl" Patch="U6x7KsJjcHmPjIX6cr9NBn" Enabled="true" />
           </ProcessDefinition>
-          <Slot Id="QoZSp4ugHpkNajcbJWCvQu" Name="Form" />
-          <Patch Id="MBpNpUESBWGPQzCfnBzBkB" Name="Dispose" ParticipatingElements="Rv2TIUkI9iXQSpiINmzb2N" />
-          <Link Id="D11IynM7YzHM6J1orqexh3" Ids="RvWqRUpCl7nNhLjPFLy5sj,It7MPLDCnE3LKy7XemnNe6" />
-          <Link Id="U5uVzLL9dp6P6zQn6lPCnQ" Ids="PJbTK2ARzPhOtuoTAQcwSU,Cu74857Bj6nOIKuYzXvm09" />
-          <Link Id="Td9gF17RIu0PCr6yuZil26" Ids="Eppar8E3UmAOjRGaxzmFAJ,P8q6jfZddJeN0tBcFku5cw" />
-          <Link Id="Rv2TIUkI9iXQSpiINmzb2N" Ids="RvWqRUpCl7nNhLjPFLy5sj,EKe8hSrIDDVOYWasqpjF5b" />
-          <Link Id="JDBi1XPoB6vMCN7k4UDoDF" Ids="S169u9InjZEMzPQiAtWyqQ,PaL3yBzCJZQQBFtN32k3Ue" />
-          <Link Id="PW0GPLaVJ47PkoYfRDhcPZ" Ids="Bj0I61fPRfsPQciCm87Oqb,Dn0Q4QPVOb5K9VhjsrLm45" />
-          <Link Id="VO6BjWPrIpoLqMUlqMZVuC" Ids="PaL3yBzCJZQQBFtN32k3Ue,RvWqRUpCl7nNhLjPFLy5sj" />
-          <Link Id="U4DU8oJQPQbOdTQDoe2Kuv" Ids="T2tl2HROmQMP1aUhJh4aiv,DaOPFL1xKYrPvhrvUyHKgb" />
+          <Slot Id="HqOpS2BSqLvLLH2klfuaYB" Name="Computer" />
+          <Link Id="HAx8UAB3yyPMxtV1FJ3rY3" Ids="H4qvvYUo9tyQAaaQV8KgQ4,LxoZCdm8PuMLcfbj6c8dIx" />
+          <Link Id="EM95ilGOxZqPvKUiWRMkXi" Ids="Hryrx1Tit7HNIvPUpKTq00,NOtDicpeI97Nkb2y3UVuLj" />
+          <Link Id="BiS6s4dBONoN0y9VUNIz2U" Ids="K66YIImYgEwPMlN41jXhI2,H4qvvYUo9tyQAaaQV8KgQ4" />
+          <Link Id="Ah3zb842e2xNl2iWs6sfLM" Ids="H4qvvYUo9tyQAaaQV8KgQ4,Vk3xYP0XIIOL4uLt6iZ4rm" />
+          <Patch Id="JPLgZOxFk7BNjeGX1n7fCC" Name="Dispose" ParticipatingElements="NbJG2Z7QlhtQKiDDDuHO1b" />
+          <Link Id="N5D40K4kuOIQKSlju0KF55" Ids="NHumWKSP1W1ONYVD4jjAQd,O5PZO7s5n6GOp7QvhjvCc2" IsHidden="true" />
+          <Link Id="ExUysAc3vGWNibSn6OMN5q" Ids="Hg7zSd5rbykNnQLCZV7Nkl,SzRa2Ud5BuWNheHRmDiHn9" IsHidden="true" />
+          <Link Id="P9WHMJjVV53MEoAWz0ghUF" Ids="EJP1rHdqixDPTjega23b9I,B9Qdrx8ty58P4kDEmxvR3V" IsHidden="true" />
+          <Link Id="VsLUlgipJAGMgsCCUtTYek" Ids="K5s0OFo8Re9MBMkpH7GGCM,IUPORbvYyKLOZ3kaoGuaXO" IsHidden="true" />
+          <Link Id="SCpD1O7zlGmNyhRd3ebhDv" Ids="CBtiAPkCsRtOcl0X1nc2fO,SPKQnerShXZNicORR6Olxf" IsHidden="true" />
+          <Link Id="OG5REof8fyhNjIEyyHGM9W" Ids="UeHm21ttPoVPbkZI2wSoLb,SeWphGpjwhTMoMqc06gyw8" />
+          <Link Id="DSzkUCYMqb9NV42OUv7Pv9" Ids="IShM1BUJR9pLFge67n6VxN,DWf3LhyAMT5NzwJWG151oZ" />
+          <Link Id="OGkyxrE1Jj2LbwjfTwN4gD" Ids="KSv0xMajgi9LLa4rl0e56Z,PbJ2vGq5IiQPBD85STV2oX" />
+          <Link Id="AeYu0vPeMICMyzU1V5FTqY" Ids="MHPLerd3RBUO94ZwiHwJCe,BSC8q9m7NwIMkkEpCDDt69" />
+          <Link Id="DU9clMlfzvFQYnhqqGLG7W" Ids="CkW8g6WQwQCMn7pK7WFZV5,VdovG9ZaPcjPfys5cNqw2S" />
+          <Link Id="GkJazI2WRjTQZ4RpuVWlsk" Ids="VdovG9ZaPcjPfys5cNqw2S,NHumWKSP1W1ONYVD4jjAQd" />
+          <Link Id="Fx22r5M06ChLwf0dl4bM3U" Ids="SzRa2Ud5BuWNheHRmDiHn9,GfrBvdbPMmHMCkpKNxyDRr" />
+          <Link Id="IJIaBmzlfBHNs0Xi473C8Z" Ids="GfrBvdbPMmHMCkpKNxyDRr,L4SUVCFohXpPBRz5FTw7lK" />
+          <Link Id="IefWQ3R2zD8M3uf7xf2Uvq" Ids="B9Qdrx8ty58P4kDEmxvR3V,KIVZKdGz9E0LHxSBBDFdYb" />
+          <Link Id="TTgc2QAj4c7MOQQrcYUCNw" Ids="KIVZKdGz9E0LHxSBBDFdYb,SeDZobc4MYqOD1zSSsaedo" />
+          <Link Id="PnxXQ9EfuJyLhykjj2Y34M" Ids="IUPORbvYyKLOZ3kaoGuaXO,FOfNeXht6XCPaxc3ggUat2" />
+          <Link Id="CLBhdCBwQ1iOQ01HjrVpLx" Ids="FOfNeXht6XCPaxc3ggUat2,PqyQgqZx0oFP26EmWE7v4T" />
+          <Link Id="QYVsCcK4INbQca8TQrqgR6" Ids="SPKQnerShXZNicORR6Olxf,VQxZ9ubES3WM7EoiWISmpd" />
+          <Link Id="AkFZKPU0d6FLctkmWTC9SW" Ids="VQxZ9ubES3WM7EoiWISmpd,IUtVKv46Qh1PjHzgbJNgUn" />
         </Patch>
       </Node>
       <!--
 
-    ************************ Main ************************
+    ************************ GetHardwareInfo ************************
 
 -->
-      <Node Name="Main" Bounds="328,368,80,80" Id="N6C4iBmiGB6N8rB4aq4xfs">
+      <Node Name="GetHardwareInfo" Bounds="525,157" Id="JT4hiXkpOg6LciNSNGUFu7">
         <p:NodeReference>
-          <Choice Kind="OperationDefinition" Name="Operation" />
+          <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-        <Patch Id="H1rDSU5UBHdPDAZTbDnDR2">
-          <Node Bounds="352,403,31,13" AutoConnect="true" Id="H3H8rr3soA5Ngz7nC7dPNL">
-            <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Program" LastSymbolSource="OpenHardwareMonitor.dll">
-              <Choice Kind="OperationNode" Name="Main" />
-              <FullNameCategoryReference ID="OpenHardwareMonitor.Program" />
-            </p:NodeReference>
-          </Node>
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ MainForm ************************
-
--->
-      <Node Name="MainForm" Bounds="481,559" Id="AIfMjqTcysFQWOq3GuCXhG">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.GUI" LastSymbolSource="OpenHardwareMonitor.dll">
-          <Choice Kind="TypeFlag" Name="MainForm" />
-        </p:TypeAnnotation>
-        <Patch Id="Dqdd7AkUjw0Lsa8vhfejxI">
-          <Canvas Id="RRFNofqjFplPE0yqQg4MJv" CanvasType="Group" />
-          <ProcessDefinition Id="Hzsu0YcQgGRPSDnHLEuFjM" IsHidden="true" />
+        <Patch Id="M7xPz2epMQZPQpXPWgSVCK">
+          <Canvas Id="LBLdLmtBsJeMb7jMb9pKx1" CanvasType="Group">
+            <ControlPoint Id="QwMl1a014ePLEgJIAyJNlB" Bounds="308,1113" />
+            <ControlPoint Id="ULK7PpJ8JJmLC5bbzJOnvf" Bounds="400,1113" />
+            <ControlPoint Id="PG4OTQj7BJFPzozZA1LRKw" Bounds="616,572" />
+            <ControlPoint Id="Rz2PbcSLLfUN3mR4LifFpt" Bounds="404,99" />
+            <Node Bounds="353,151,230,849" Id="RMgV8mPLJT3QOCyeBl2s5N">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="ProcessAppFlag" Name="AsyncTask" />
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              </p:NodeReference>
+              <Pin Id="E6aUzd09jmQLHGkXxxzxPb" Name="Trigger" Kind="InputPin" />
+              <Pin Id="U22NrUXmJloPSqrdaNHJun" Name="Abort" Kind="InputPin" />
+              <Pin Id="Oqaxxsz7UqsQHWZV4PBXQ0" Name="Result" Kind="OutputPin" />
+              <Pin Id="TEjqVjVzsxbOLfqHFD2f9d" Name="In Progress" Kind="OutputPin" />
+              <Patch Id="UHpLwVvBfYwNZNZFR7zaGE" ManuallySortedPins="true">
+                <Patch Id="BYmRLJh4Q4FN7lRMsnKe1A" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="CtWNvBqYxSlNVZgDZy5ILW" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="IEgRyQjCzaNOXvnz5BTR8o" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="HSCDN2BIpogM9487iy3BCC" Name="Output" Kind="OutputPin" />
+                  <Pin Id="To4EXvv4uGNMZQnZFVDayx" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
+                    <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                      <Choice Kind="TypeFlag" Name="HardwareType" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                </Patch>
+                <ControlPoint Id="JNmjButyGDuM2z7YLCd25v" Bounds="373,157" />
+                <ControlPoint Id="ITtpwtngHklMnkQxZ9Ob8c" Bounds="472,991" />
+                <Node Bounds="401,185,125,136" Id="U3SKP6kOnFoOXvcUTvrZWm">
+                  <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="OperationCallFlag" Name="Where" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="BtP8nM8exOLM3OdFS5t7B3" Name="Input" Kind="InputPin" />
+                  <Pin Id="MGdMSQ537pOLHIyI9FGTmk" Name="Output" Kind="OutputPin" />
+                  <Patch Id="Rm1YZxPz8o2N0jDKQjz1PP" Name="Predicate" ManuallySortedPins="true">
+                    <Pin Id="LySbKu9hFEvQIkbcuyaL3w" Name="Arg 1" Kind="InputPin" />
+                    <Pin Id="CrFrR4w3uW1MVTtJOO29Nc" Name="Arg 2" Kind="InputPin" />
+                    <Pin Id="PPxPCHd3lB5Me3KQ9ygAWW" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="UT2oS8dXZXyMhjoYGjyvL5" Bounds="405,191" />
+                    <ControlPoint Id="Hr38AKPiJSqLQ1JXIpRro6" Bounds="465,191" />
+                    <ControlPoint Id="UDjfX0Wmp0VOlQseHLTxOm" Bounds="414,312" />
+                    <Node Bounds="418,224,75,22" Id="KwCnLU0npgjMbO6F1lqlMO">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.IHardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="HardwareType" />
+                        <CategoryReference Kind="AssemblyCategory" Name="IHardware" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="R1pKzFaD30lQInc0gw3vPC" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="KgqPERB5RBlMyA8oU9BXoX" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="D6LmWUmGZLMNR5FTUYAKPZ" Name="Hardware Type" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="489,269,25,13" Id="PHQiRc9WxK3OJA2liW35rK">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.HardwareType" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HardwareType" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="LGsivtMo5bzLnQjgc8piC5" Name="Input" Kind="InputPin" />
+                      <Pin Id="GBPHUF7bsYNLzYNBh2KSJa" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="PlrexNF58VgQMzIZUtIOzT" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="400,396,46,22" Id="OAyXKt9QilVOrF7a52YxZq">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="IPHMDdUiEDyPVVwrF6cMlr" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FcHavYmxfuPOOs5SzwlnLW" Name="Default Value" Kind="InputPin" />
+                  <Pin Id="HiNO3uAJ5XUQCpeQpbtP2Z" Name="Index" Kind="InputPin" />
+                  <Pin Id="TgfMZRQdAhQQXiue8K6bN9" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="400,345,77,22" Id="JvtbIpZXuSAMhCR1GqsgHv">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="HUO0X5xwn3qMVHqoiW4umw" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Pm6zdAHgCtnQB3ebB98qgR" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="400,490,45,22" Id="IRVzmM8xNieN88aKc1aH76">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.IHardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Sensors" />
+                    <CategoryReference Kind="AssemblyCategory" Name="IHardware" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="VsMbHRVUlcWMTEnhSVmEW3" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="SSdcY6B23V2PSpIRpzTihd" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="EY5Cx0bYBfYMFJMO1EMf2O" Name="Sensors" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="400,445,45,22" Id="TxPLBn7icmiLghNYPIZj6i">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.IHardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Update" />
+                    <CategoryReference Kind="AssemblyCategory" Name="IHardware" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="RnKKql0bAQZQawKtjlaE6C" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="EX2xd0y4ptkNAbGDo7GWKx" Name="Apply" Kind="InputPin" />
+                  <Pin Id="O1xCneYUGmUOJLHOmAfM4J" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="425,692,146,231" Id="McPfY4kP06hOJLUX3UJ9tT">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="JhaFMPZ2bJoPmrFmW1hpnk" Name="Break" Kind="OutputPin" />
+                  <Patch Id="KzwHrXNockoLIt8ZWuqNnq" ManuallySortedPins="true">
+                    <Patch Id="CSnU1Y5lilaM9aRbGWXkzx" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="T0494I5X2Q3PflHID7q0Ei" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="FxfGey83z6mPMpFScixaY2" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="442,775,35,22" Id="Ve78XnmsE3DOiYpyXRS4Zo">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.ISensor" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ISensor" />
+                        <Choice Kind="OperationCallFlag" Name="Value" />
+                      </p:NodeReference>
+                      <Pin Id="VVu6koKr2luMVglHMGaqzE" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="RpNjRALW6wBQBIUJKCUk80" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="JTjcDDt2IG1PFl8CCfPnSp" Name="Value" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="441,726,35,22" Id="INtafDKSlBKN9ua95wdm5E">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.ISensor" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ISensor" />
+                        <Choice Kind="OperationCallFlag" Name="Name" />
+                      </p:NodeReference>
+                      <Pin Id="Kng4wCeZiH2Oc0yhZX4VW3" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="OcO9c3w5EqwN7HAf3v97SS" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="LJVknHPMtddQDIWXQZm7qO" Name="Name" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="477,826,82,76" Id="KS7q4PVKkKpNnn3GhFg8yM">
+                      <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                        <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                        <FullNameCategoryReference ID="Primitive" />
+                      </p:NodeReference>
+                      <Pin Id="Q3ffrAvt3wGQaeZbzEGDSj" Name="Condition" Kind="InputPin" />
+                      <Patch Id="Hg2yKytkrXYLEIIabzeu2o" ManuallySortedPins="true">
+                        <Patch Id="JMzwSapzPstORfJe3N6l7a" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="G9JaLfp7NWtPOgR5r9vF0H" Name="Then" ManuallySortedPins="true" />
+                        <Node Bounds="489,854,47,22" Id="N2x5VxZq0GgNOfxPnlwefC">
+                          <p:NodeReference LastCategoryFullName="System.Nullable`1" LastSymbolSource="System.Runtime.dll">
+                            <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                            <Choice Kind="OperationCallFlag" Name="Value" />
+                            <CategoryReference Kind="AssemblyCategory" Name="Nullable`1" NeedsToBeDirectParent="true" />
+                          </p:NodeReference>
+                          <Pin Id="OYQpJgZeoeAMQnr3fIEQpT" Name="Input" Kind="StateInputPin" />
+                          <Pin Id="K1unyzAMAdBNV6VtwGdpQ2" Name="Output" Kind="StateOutputPin" />
+                          <Pin Id="V2QXxKBNU03QGeymNJdTCx" Name="Value" Kind="OutputPin" />
+                        </Node>
+                      </Patch>
+                      <ControlPoint Id="ANczqQAnhEIPU6I6tYEqaU" Bounds="533,896" Alignment="Bottom" />
+                      <ControlPoint Id="Jwb5aedtJazQFN2ntmY4Ht" Bounds="533,832" Alignment="Top" />
+                    </Node>
+                    <Node Bounds="489,776,52,22" Id="GQUg7YMdOrGNTgIfVCf7eB">
+                      <p:NodeReference LastCategoryFullName="System.Nullable`1" LastSymbolSource="System.Runtime.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="HasValue" />
+                      </p:NodeReference>
+                      <Pin Id="RtGaCQWkauBLKzWnbnZwZQ" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="PJsxInKfH9cPIcTw4AnJtN" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="Ugq4iYgmB91M3lx16lvrxf" Name="Has Value" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="EoY2tMpuvPROsI8u3tjInP" Bounds="440,698" Alignment="Top" />
+                  <ControlPoint Id="NmT31VhaXCPPTkMqGxeLSs" Bounds="534,917" Alignment="Bottom" />
+                  <ControlPoint Id="VE2xJGJYi5dMt39ZnKXvpS" Bounds="456,917" Alignment="Bottom" />
+                </Node>
+                <Node Bounds="437,535,123,136" Id="GqGVINPjiEOOy7HbCWKGvP">
+                  <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="OperationCallFlag" Name="Where" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
+                    <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="CqtqW0oAKTEMY0xKLITdXG" Name="Input" Kind="InputPin" />
+                  <Pin Id="MBDIgCnAuWOL4PvHO52x6s" Name="Output" Kind="OutputPin" />
+                  <Patch Id="RvdrEMSw5wnM9VdcMK1mfC" Name="Predicate" ManuallySortedPins="true">
+                    <Pin Id="E2yfoXx47WWOCdroNvpmtm" Name="Arg 1" Kind="InputPin" />
+                    <Pin Id="BgHHVcqqdysLSCkBCKHN2E" Name="Arg 2" Kind="InputPin" />
+                    <Pin Id="Gu9I1FmlmT6L2aY2GK0utj" Name="Result" Kind="OutputPin" />
+                    <ControlPoint Id="BuyMf5S9BWYLkK3mQgvGnD" Bounds="450,541" />
+                    <ControlPoint Id="EXerwx038m0MUsv6Bl93MO" Bounds="510,541" />
+                    <ControlPoint Id="Ul2bAM0dtZnPFNaUlDZKhh" Bounds="459,662" />
+                    <Node Bounds="449,576,75,22" Id="EyngHvaFM4vL0izaDcIfAn">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.ISensor" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="SensorType" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ISensor" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Ruk7VOSgNgxPeEBwPTNP6c" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="UTzRsrsYunFNg7Jt81kbfO" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="DUxB0rqwMDfONiWAl0t6HO" Name="Sensor Type" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="519,619,25,13" Id="DRyTzZ9GotEPaERABv45nd">
+                      <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.SensorType" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="=" />
+                        <CategoryReference Kind="AssemblyCategory" Name="SensorType" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="Diuf09XIkXaNcjB9pkCyx3" Name="Input" Kind="InputPin" />
+                      <Pin Id="O7jSnx1fbDvPJtIVN9UCqD" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="Pz6oNQgQpcUMc5GXWQ6J5h" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="468,944,63,22" Id="VHWazaYlsLTOMLxswjzdEO">
+                  <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Join" />
+                    <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="FuZR9sOnvfdO1c6a6lHGHr" Name="Item 1" Kind="InputPin" />
+                  <Pin Id="LrBRtgdSj81PkF6Hji0YNm" Name="Item 2" Kind="InputPin" />
+                  <Pin Id="OWyPrtCgRulPQwYH9JuQXM" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="BqIDbh5SgK2QDBhbVVsi5I" Bounds="605,226" />
+            <ControlPoint Id="HbLWP7tnhslQDYobt3C1AE" Bounds="338,97" />
+            <ControlPoint Id="FN9wsjSKETnNdBp564O5y3" Bounds="598,360" />
+            <ControlPoint Id="IaFtCGwZhZ7OvHSt16i27T" Bounds="596,398" />
+            <Node Bounds="325,1065,63,22" Id="KkVStcC7QUtLGQB36deDMP">
+              <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+                <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="PE0admeYQ3cLOR1s0Zaw4h" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RTCN4MGYEXJPdRYIiV7NIV" Name="Item 1" Kind="OutputPin" />
+              <Pin Id="Ky38wXJPX4gQLuvcH2EwkD" Name="Item 2" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="325,1027,58,13" Id="P71ITYxKwQpLEU7pAJjIpK">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="TSg9yVBvRENQAsgVCvOI20" Name="Initial Result" Kind="InputPin" />
+              <Pin Id="MN5MwgwMe2gNiEdCi91Lx3" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="S7jFWHnNYkKOcXgcFImXdC" Name="Reset" Kind="InputPin" />
+              <Pin Id="AJRJ2SeFsM1MFebPK4OKvW" Name="Value" Kind="OutputPin" />
+              <Pin Id="VffqedmSXh7P38E9eCx9Rw" Name="On Data" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="RUlMZOIjvv8Oqjb1m9MoVF" Name="Create" />
+          <Patch Id="RrvHBhMKANOMxEGahVLiDe" Name="Update" ManuallySortedPins="true">
+            <Pin Id="Th8r3tubIrQNwZP9RFxkiZ" Name="Input" Kind="InputPin" Bounds="361,132" />
+            <Pin Id="Fsh6Pw6hgGDO3yRp9dbi50" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="HardwareType" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HZwGPhoSB4eQRaLp5kRcV6" Name="Index" Kind="InputPin" Bounds="599,432" />
+            <Pin Id="KZYPWfUWMmvMbOl6QBMb6R" Name="Sensor Type" Kind="InputPin" Bounds="665,484" DefaultValue="&quot;Temperature&quot;">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="SensorType" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QmqdnnLGob3PLH5tOw6oa7" Name="Update" Kind="InputPin" Bounds="711,595" />
+            <Pin Id="BA2fnUnR2oVLMlDlfLHtWb" Name="Sensor Names" Kind="OutputPin" Bounds="340,1224" />
+            <Pin Id="HvcqT7cxlyCNeIb7fMCLRo" Name="Sensor Values" Kind="OutputPin" Bounds="438,1219" />
+          </Patch>
+          <ProcessDefinition Id="Flo1rgC3DjZLlJgd9wlIzf">
+            <Fragment Id="EAQcHsWlNPBL6m6idptXjI" Patch="RUlMZOIjvv8Oqjb1m9MoVF" Enabled="true" />
+            <Fragment Id="PRxtlJKqPVAON9CTJSg1eI" Patch="RrvHBhMKANOMxEGahVLiDe" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="RJOKwbcrk8rNMmXFXpsSwa" Ids="QwMl1a014ePLEgJIAyJNlB,BA2fnUnR2oVLMlDlfLHtWb" IsHidden="true" />
+          <Link Id="QUsd0QLBRDdLwRriFCBR3B" Ids="ULK7PpJ8JJmLC5bbzJOnvf,HvcqT7cxlyCNeIb7fMCLRo" IsHidden="true" />
+          <Link Id="GjUPvsib1etOK8eww95utG" Ids="KZYPWfUWMmvMbOl6QBMb6R,PG4OTQj7BJFPzozZA1LRKw" IsHidden="true" />
+          <Link Id="C5fdOgpKmvVOane5CqHmlY" Ids="Rz2PbcSLLfUN3mR4LifFpt,BtP8nM8exOLM3OdFS5t7B3" />
+          <Link Id="QxgPr4lwEl1P7wCMhTydQ0" Ids="Th8r3tubIrQNwZP9RFxkiZ,Rz2PbcSLLfUN3mR4LifFpt" IsHidden="true" />
+          <Link Id="MMB4umVtbNNQKb5rCDukuD" Ids="IEgRyQjCzaNOXvnz5BTR8o,JNmjButyGDuM2z7YLCd25v" IsHidden="true" />
+          <Link Id="L5yzPI4s5MeM3I1oP2YN2h" Ids="ITtpwtngHklMnkQxZ9Ob8c,HSCDN2BIpogM9487iy3BCC" IsHidden="true" />
+          <Link Id="F0hqWyV7PeTOhmFTozOs1T" Ids="LySbKu9hFEvQIkbcuyaL3w,UT2oS8dXZXyMhjoYGjyvL5" IsHidden="true" />
+          <Link Id="AVgxh7CPVMGMVZa8MJX7lh" Ids="CrFrR4w3uW1MVTtJOO29Nc,Hr38AKPiJSqLQ1JXIpRro6" IsHidden="true" />
+          <Link Id="GOTxsOKUedOOTIwTOVbbPX" Ids="UDjfX0Wmp0VOlQseHLTxOm,PPxPCHd3lB5Me3KQ9ygAWW" IsHidden="true" />
+          <Link Id="A90CWXNUYZHM7PP7HbFxXg" Ids="UT2oS8dXZXyMhjoYGjyvL5,R1pKzFaD30lQInc0gw3vPC" />
+          <Link Id="IxCmXcShApHMIkRasZRbBz" Ids="D6LmWUmGZLMNR5FTUYAKPZ,LGsivtMo5bzLnQjgc8piC5" />
+          <Link Id="K6yAD9OB83PMyQU5t9B5Wd" Ids="PlrexNF58VgQMzIZUtIOzT,UDjfX0Wmp0VOlQseHLTxOm" />
+          <Link Id="LyCTLr3sx8SOXf0xX15oHG" Ids="MGdMSQ537pOLHIyI9FGTmk,HUO0X5xwn3qMVHqoiW4umw" />
+          <Link Id="HTLqhWOkFQOQRF0EBE2kbS" Ids="O1xCneYUGmUOJLHOmAfM4J,VsMbHRVUlcWMTEnhSVmEW3" />
+          <Link Id="PSGSa2zYSLfNZGQBs1WaZv" Ids="Pm6zdAHgCtnQB3ebB98qgR,IPHMDdUiEDyPVVwrF6cMlr" />
+          <Link Id="Ij1OLM3dq5QQUaXV7dIpwj" Ids="TgfMZRQdAhQQXiue8K6bN9,RnKKql0bAQZQawKtjlaE6C" />
+          <Link Id="MhEPtQEZOUGMXh9M9PSPyT" Ids="LJVknHPMtddQDIWXQZm7qO,VE2xJGJYi5dMt39ZnKXvpS" />
+          <Link Id="UKuITmYn3IyOp2Cfn4KXtY" Ids="OcO9c3w5EqwN7HAf3v97SS,VVu6koKr2luMVglHMGaqzE" />
+          <Link Id="MoHXDdRRri9PdW2JOr5Rge" Ids="E2yfoXx47WWOCdroNvpmtm,BuyMf5S9BWYLkK3mQgvGnD" IsHidden="true" />
+          <Link Id="OKalQTNiX56L6kqOx56nwb" Ids="BgHHVcqqdysLSCkBCKHN2E,EXerwx038m0MUsv6Bl93MO" IsHidden="true" />
+          <Link Id="KuffWJwWeTKNdcBLupKxwS" Ids="Ul2bAM0dtZnPFNaUlDZKhh,Gu9I1FmlmT6L2aY2GK0utj" IsHidden="true" />
+          <Link Id="RnXMZSEc7pOPe3UVxmnbcO" Ids="BuyMf5S9BWYLkK3mQgvGnD,Ruk7VOSgNgxPeEBwPTNP6c" />
+          <Link Id="IzZP5P47KniNP42lHBn9Fk" Ids="DUxB0rqwMDfONiWAl0t6HO,Diuf09XIkXaNcjB9pkCyx3" />
+          <Link Id="JvzIpi6rMkaNNhZNjFiYX7" Ids="Pz6oNQgQpcUMc5GXWQ6J5h,Ul2bAM0dtZnPFNaUlDZKhh" />
+          <Link Id="O5ue3m4JV4vNAYpWNtsL2p" Ids="MBDIgCnAuWOL4PvHO52x6s,EoY2tMpuvPROsI8u3tjInP" />
+          <Link Id="TRqyzA0aOcVNofhlgWrwXY" Ids="EoY2tMpuvPROsI8u3tjInP,Kng4wCeZiH2Oc0yhZX4VW3" />
+          <Link Id="FXVeak3FBxfLcbkPMb3Edf" Ids="JTjcDDt2IG1PFl8CCfPnSp,OYQpJgZeoeAMQnr3fIEQpT" />
+          <Link Id="NzjR9ed9GRpLr9B4IHcbyS" Ids="JTjcDDt2IG1PFl8CCfPnSp,RtGaCQWkauBLKzWnbnZwZQ" />
+          <Link Id="Sq7FqDUcUUmOArYGHnAzGv" Ids="Ugq4iYgmB91M3lx16lvrxf,Q3ffrAvt3wGQaeZbzEGDSj" />
+          <Link Id="Af1cIGTkKofNAeCUvIClxR" Ids="Jwb5aedtJazQFN2ntmY4Ht,ANczqQAnhEIPU6I6tYEqaU" IsFeedback="true" />
+          <Link Id="AJR2xs2kyzrLZjfZSFHxcN" Ids="V2QXxKBNU03QGeymNJdTCx,ANczqQAnhEIPU6I6tYEqaU" />
+          <Link Id="UCzmaGCRNLSLEjvrviLRor" Ids="ANczqQAnhEIPU6I6tYEqaU,NmT31VhaXCPPTkMqGxeLSs" />
+          <Link Id="LDKRuzaHsXALmtK9fazSe9" Ids="BqIDbh5SgK2QDBhbVVsi5I,GBPHUF7bsYNLzYNBh2KSJa" />
+          <Link Id="DDhLiyeAgEvLjZWvTx4qu8" Ids="FN9wsjSKETnNdBp564O5y3,HiNO3uAJ5XUQCpeQpbtP2Z" />
+          <Link Id="ExK3aP7oqAPQMt6GXPNtUq" Ids="IaFtCGwZhZ7OvHSt16i27T,EX2xd0y4ptkNAbGDo7GWKx" />
+          <Link Id="RfbxXrw1VPcOMvqvmSXYZq" Ids="Fsh6Pw6hgGDO3yRp9dbi50,BqIDbh5SgK2QDBhbVVsi5I" IsHidden="true" />
+          <Link Id="KRp4TGX0q45NhPqBVcnzog" Ids="HbLWP7tnhslQDYobt3C1AE,E6aUzd09jmQLHGkXxxzxPb" />
+          <Link Id="DwiB6qxmfyVM2wCTUr8ytQ" Ids="QmqdnnLGob3PLH5tOw6oa7,HbLWP7tnhslQDYobt3C1AE" IsHidden="true" />
+          <Link Id="TaPbbFw3pf1OvnYeBVqcwy" Ids="PG4OTQj7BJFPzozZA1LRKw,O7jSnx1fbDvPJtIVN9UCqD" />
+          <Link Id="AnJvfK25Qm9NnbIPdbF3Dv" Ids="EY5Cx0bYBfYMFJMO1EMf2O,CqtqW0oAKTEMY0xKLITdXG" />
+          <Link Id="D5meU70XmSuLLK8MwGVnQS" Ids="HZwGPhoSB4eQRaLp5kRcV6,FN9wsjSKETnNdBp564O5y3" IsHidden="true" />
+          <Link Id="MWUXIV9s4lmMUmIpIbUbnz" Ids="QmqdnnLGob3PLH5tOw6oa7,IaFtCGwZhZ7OvHSt16i27T" IsHidden="true" />
+          <Link Id="AIg31BPpcXFP6g5WvhW6Fj" Ids="VE2xJGJYi5dMt39ZnKXvpS,FuZR9sOnvfdO1c6a6lHGHr" />
+          <Link Id="Sv1Gyv9W3jtMtkagR62DZi" Ids="NmT31VhaXCPPTkMqGxeLSs,LrBRtgdSj81PkF6Hji0YNm" />
+          <Link Id="G7d3PUqD0NQQcmF5dlWs3i" Ids="OWyPrtCgRulPQwYH9JuQXM,ITtpwtngHklMnkQxZ9Ob8c" />
+          <Link Id="J3rWML8qyafOOu5y5NfZnZ" Ids="Oqaxxsz7UqsQHWZV4PBXQ0,MN5MwgwMe2gNiEdCi91Lx3" />
+          <Link Id="AEGt93N74CQMC0jNMBDA98" Ids="AJRJ2SeFsM1MFebPK4OKvW,PE0admeYQ3cLOR1s0Zaw4h" />
+          <Link Id="PyK0DAUKtotN1IdQOJ6t3j" Ids="RTCN4MGYEXJPdRYIiV7NIV,QwMl1a014ePLEgJIAyJNlB" />
+          <Link Id="S6LMp15iLtRPeDttxthtm1" Ids="Ky38wXJPX4gQLuvcH2EwkD,ULK7PpJ8JJmLC5bbzJOnvf" />
         </Patch>
       </Node>
     </Canvas>
   </Patch>
-  <NugetDependency Id="PeSj5kCGqm0NaKV2fEn2wx" Location="VL.Core" Version="0.94.43-gbdf7874c9e" />
-  <PlatformDependency Id="FSvx9oRtyZRM8IktpC2ZUO" Location="./lib/OpenHardwareMonitor.dll" />
-  <PlatformDependency Id="ULTZJM9TA5IMGbW1wh2ANU" Location="System.Windows.Forms" />
+  <NugetDependency Id="ULfF0GFZsFSQP9EjO9jmmf" Location="VL.Core" Version="0.93.72-g750e4408d0" />
+  <NugetDependency Id="IWXWuKIn35WMnXZQNpRC60" Location="VL.CoreLib" Version="0.93.72-g750e4408d0" />
+  <NugetDependency Id="LkX3YAltl7DMH6f2Et9vWP" Location="VL.CoreLib.Standalone" Version="0.93.72-g750e4408d0" />
+  <PlatformDependency Id="On0hiR2LmX5L7fMpIpIGvN" Location="System.Runtime" />
+  <NugetDependency Id="SxdoDXwdnblOmU6WYVlXCG" Location="LibreHardwareMonitorLibCore" Version="1.0.3" />
 </Document>
