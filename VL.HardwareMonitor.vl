@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DulD1h04j4MLgrnPG0wfwm" Version="0.93">
+<Document xmlns:p="property" Id="DulD1h04j4MLgrnPG0wfwm" Version="0.94">
+  <NugetDependency Id="ULfF0GFZsFSQP9EjO9jmmf" Location="VL.Core" Version="0.93.72-g750e4408d0" />
+  <NugetDependency Id="IWXWuKIn35WMnXZQNpRC60" Location="VL.CoreLib" Version="0.93.72-g750e4408d0" />
+  <PlatformDependency Id="On0hiR2LmX5L7fMpIpIGvN" Location="System.Runtime" />
+  <NugetDependency Id="SxdoDXwdnblOmU6WYVlXCG" Location="LibreHardwareMonitorLibCore" Version="1.0.3" />
   <Patch Id="GDbpnUnWR78PzhHHNEqlCk">
     <Canvas Id="SgBG6X8qhsELaLh70Ou0rk" DefaultCategory="System" CanvasType="FullCategory">
       <!--
@@ -73,7 +77,7 @@
                     <Choice Kind="OperationCallFlag" Name="SetCPUEnabled" />
                   </p:NodeReference>
                   <Pin Id="LxoZCdm8PuMLcfbj6c8dIx" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="L4SUVCFohXpPBRz5FTw7lK" Name="Value" Kind="InputPin" DefaultValue="true">
+                  <Pin Id="L4SUVCFohXpPBRz5FTw7lK" Name="Value" Kind="InputPin" DefaultValue="True">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
@@ -86,7 +90,7 @@
                     <Choice Kind="OperationCallFlag" Name="SetGPUEnabled" />
                   </p:NodeReference>
                   <Pin Id="SeWphGpjwhTMoMqc06gyw8" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="SeDZobc4MYqOD1zSSsaedo" Name="Value" Kind="InputPin" DefaultValue="true">
+                  <Pin Id="SeDZobc4MYqOD1zSSsaedo" Name="Value" Kind="InputPin" DefaultValue="True">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
@@ -122,7 +126,7 @@
           <Patch Id="DlB0IjJCQozLfbTu047UzX" Name="Create" ParticipatingElements="Ctj9FOIPEZhOHgnPc6fXso" />
           <Patch Id="U6x7KsJjcHmPjIX6cr9NBn" Name="Update">
             <Pin Id="O5PZO7s5n6GOp7QvhjvCc2" Name="Hardware" Kind="OutputPin" Bounds="566,507" />
-            <Pin Id="Hg7zSd5rbykNnQLCZV7Nkl" Name="Enable CPU" Kind="InputPin" Bounds="604,299" DefaultValue="true">
+            <Pin Id="Hg7zSd5rbykNnQLCZV7Nkl" Name="Enable CPU" Kind="InputPin" Bounds="604,299" DefaultValue="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -192,7 +196,7 @@
                 <Patch Id="CtWNvBqYxSlNVZgDZy5ILW" Name="Update" ManuallySortedPins="true">
                   <Pin Id="IEgRyQjCzaNOXvnz5BTR8o" Name="Input 1" Kind="InputPin" />
                   <Pin Id="HSCDN2BIpogM9487iy3BCC" Name="Output" Kind="OutputPin" />
-                  <Pin Id="To4EXvv4uGNMZQnZFVDayx" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
+                  <Pin Id="To4EXvv4uGNMZQnZFVDayx" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="CPU">
                     <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                       <Choice Kind="TypeFlag" Name="HardwareType" />
                     </p:TypeAnnotation>
@@ -424,13 +428,13 @@
           <Patch Id="RUlMZOIjvv8Oqjb1m9MoVF" Name="Create" />
           <Patch Id="RrvHBhMKANOMxEGahVLiDe" Name="Update" ManuallySortedPins="true">
             <Pin Id="Th8r3tubIrQNwZP9RFxkiZ" Name="Input" Kind="InputPin" Bounds="361,132" />
-            <Pin Id="Fsh6Pw6hgGDO3yRp9dbi50" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
+            <Pin Id="Fsh6Pw6hgGDO3yRp9dbi50" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="CPU">
               <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                 <Choice Kind="TypeFlag" Name="HardwareType" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="HZwGPhoSB4eQRaLp5kRcV6" Name="Index" Kind="InputPin" Bounds="599,432" />
-            <Pin Id="KZYPWfUWMmvMbOl6QBMb6R" Name="Sensor Type" Kind="InputPin" Bounds="665,484" DefaultValue="&quot;Temperature&quot;">
+            <Pin Id="KZYPWfUWMmvMbOl6QBMb6R" Name="Sensor Type" Kind="InputPin" Bounds="665,484" DefaultValue="Temperature">
               <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                 <Choice Kind="TypeFlag" Name="SensorType" />
               </p:TypeAnnotation>
@@ -497,9 +501,5 @@
       </Node>
     </Canvas>
   </Patch>
-  <NugetDependency Id="ULfF0GFZsFSQP9EjO9jmmf" Location="VL.Core" Version="0.93.72-g750e4408d0" />
-  <NugetDependency Id="IWXWuKIn35WMnXZQNpRC60" Location="VL.CoreLib" Version="0.93.72-g750e4408d0" />
-  <NugetDependency Id="LkX3YAltl7DMH6f2Et9vWP" Location="VL.CoreLib.Standalone" Version="0.93.72-g750e4408d0" />
-  <PlatformDependency Id="On0hiR2LmX5L7fMpIpIGvN" Location="System.Runtime" />
-  <NugetDependency Id="SxdoDXwdnblOmU6WYVlXCG" Location="LibreHardwareMonitorLibCore" Version="1.0.3" />
+  <PlatformDependency Id="LH4dijjMhiXQBbnaRfH1Lf" Location="OpenHardwareMonitorLib.dll" />
 </Document>
