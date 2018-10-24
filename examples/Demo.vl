@@ -36,7 +36,7 @@
               </p:NodeReference>
               <Pin Id="RHMlYciC0WbMHo2l1uuucm" Name="Input" Kind="InputPin" />
               <Pin Id="O7d5LU97KWQQCXiS98LDN8" Name="Type" Kind="InputPin" />
-              <Pin Id="DU8ycoepxkuQEeTkP3TXQa" Name="Index" Kind="InputPin" />
+              <Pin Id="GiziB9oHpTnN78x70ury37" Name="Index" Kind="InputPin" />
               <Pin Id="UriqPWEkCyLPHjdZQXgtgq" Name="Sensor Type" Kind="InputPin" DefaultValue="&quot;Power&quot;">
                 <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                   <Choice Kind="TypeFlag" Name="SensorType" />
@@ -67,7 +67,7 @@
                   <Choice Kind="TypeFlag" Name="HardwareType" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="QiZrLBzsvKqM4RWSDKj2ff" Name="Index" Kind="InputPin" />
+              <Pin Id="RdX6BJmQxfDLwSPIYkY5LQ" Name="Index" Kind="InputPin" />
               <Pin Id="BqVi3vCmYMvMup5GP9bO6w" Name="Sensor Type" Kind="InputPin" DefaultValue="&quot;Power&quot;">
                 <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                   <Choice Kind="TypeFlag" Name="SensorType" />
@@ -87,7 +87,7 @@
                 <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="UHwT6IIMEIjPTRQBSq5awW" Comment="Sensor Type" Bounds="208,303,84,19" ShowValueBox="true" isIOBox="true" Value="&quot;Load&quot;">
+            <Pad Id="UHwT6IIMEIjPTRQBSq5awW" Comment="Sensor Type" Bounds="208,303,84,19" ShowValueBox="true" isIOBox="true" Value="&quot;Temperature&quot;">
               <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                 <Choice Kind="TypeFlag" Name="SensorType" />
               </p:TypeAnnotation>
@@ -139,11 +139,11 @@
           <Link Id="K8Vn2gYOGM8M2oOZqAyTSd" Ids="C65UIRrhvUuPDHIntNxsSJ,C53WaDb13qZQHcjkJyk8Sb" />
           <Link Id="SaMNvbbgE8YNqdytmSsPyN" Ids="LnLBqEE1rfJMz5nesW7XTW,Nh2mLOQiKJBM2jbampx7C6" />
           <Link Id="R0asZY8toQxOjQs5jVcrkd" Ids="UHwT6IIMEIjPTRQBSq5awW,UriqPWEkCyLPHjdZQXgtgq" />
+          <Link Id="CvdCdatVlKnM65oBHH2T8O" Ids="KaS0Y3gMUJLQMe1wpKfGYq,O7d5LU97KWQQCXiS98LDN8" />
           <Link Id="HumqjN9bpnZPfjVezIEWDd" Ids="S78q5VL9aasOiMGgCWdQl1,NQ7qbMOyEG0QARPjLR5jRs" />
           <Link Id="UhqulgXQrevMSbQRqho7KI" Ids="TqUigQWhQPPNUZeLi6FF9s,BqVi3vCmYMvMup5GP9bO6w" />
           <Link Id="OWZGnFS5WaoMdlP3lYlUwc" Ids="HKkawClQUzMNjBng2zXSgc,PDB8uH0hKucORvms8N9ap6" />
           <Link Id="U5RuFYRFrnJOL4cH3apGNJ" Ids="QEI5m35dntDOvDHlCB1NpC,GMT8TnGG3JsLMxmW6ZYyHb" />
-          <Link Id="MJo1z1cPRx3QDSLoWdQepX" Ids="KaS0Y3gMUJLQMe1wpKfGYq,O7d5LU97KWQQCXiS98LDN8" />
         </Patch>
       </Node>
     </Canvas>
