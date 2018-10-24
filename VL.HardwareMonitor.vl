@@ -40,12 +40,12 @@
               <Pin Id="Vk3xYP0XIIOL4uLt6iZ4rm" Name="Input" Kind="StateInputPin" />
               <Pin Id="N1dAXtVfHblLIwlv53c1Yz" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="NHumWKSP1W1ONYVD4jjAQd" Bounds="417,633" />
+            <ControlPoint Id="NHumWKSP1W1ONYVD4jjAQd" Bounds="415,757" />
             <ControlPoint Id="SzRa2Ud5BuWNheHRmDiHn9" Bounds="442,307" />
             <ControlPoint Id="B9Qdrx8ty58P4kDEmxvR3V" Bounds="519,307" />
             <ControlPoint Id="IUPORbvYyKLOZ3kaoGuaXO" Bounds="602,307" />
             <ControlPoint Id="SPKQnerShXZNicORR6Olxf" Bounds="687,307" />
-            <Node Bounds="360,355,241,237" Id="TVwZUXUhahOOR68KlrEycw">
+            <Node Bounds="358,354,404,362" Id="TVwZUXUhahOOR68KlrEycw">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="Cache" />
@@ -57,7 +57,7 @@
               <Patch Id="DCKqWkBbdCePMhhJDNK37E" ManuallySortedPins="true">
                 <Patch Id="KFLu2Oi1WbsOilQBTeI4Vw" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Gfssl4FqBINMrCyTjwTOVU" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="372,550,53,22" Id="ENrM08CEDPYOgTODzeiaBY">
+                <Node Bounds="370,674,53,22" Id="ENrM08CEDPYOgTODzeiaBY">
                   <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Computer" />
@@ -102,7 +102,7 @@
                   <Pin Id="PqyQgqZx0oFP26EmWE7v4T" Name="Value" Kind="InputPin" />
                   <Pin Id="IShM1BUJR9pLFge67n6VxN" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="373,509,109,22" Id="LGJha9GySsvMjEbbb5KRqQ">
+                <Node Bounds="372,499,109,22" Id="LGJha9GySsvMjEbbb5KRqQ">
                   <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetMainboardEnabled" />
@@ -111,13 +111,35 @@
                   <Pin Id="IUtVKv46Qh1PjHzgbJNgUn" Name="Value" Kind="InputPin" />
                   <Pin Id="KSv0xMajgi9LLa4rl0e56Z" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Node Bounds="372,553,80,22" Id="Dkiq7zwrpXJOKrLl1XlD8L">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetRAMEnabled" />
+                  </p:NodeReference>
+                  <Pin Id="GHkovm4ptaLOOvuxV1Fqgz" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="P9QWksC0JRIQKXGV7LucED" Name="Value" Kind="InputPin" />
+                  <Pin Id="EKNNkVmicCzPNd438PXot4" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="371,604,76,22" Id="SvXNqsBiZzJMFwXN98JnjF">
+                  <p:NodeReference LastCategoryFullName="OpenHardwareMonitor.Hardware.Computer" LastSymbolSource="OpenHardwareMonitorLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetNICEnabled" />
+                  </p:NodeReference>
+                  <Pin Id="IfzrrMBkNODQR1HNoO6bD4" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="EaVIUndhsCzPCGXaCbiAWN" Name="Value" Kind="InputPin" />
+                  <Pin Id="D8kFVYo8AksMxvWPAA5kLO" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Patch>
-              <ControlPoint Id="VdovG9ZaPcjPfys5cNqw2S" Bounds="422,586" Alignment="Bottom" />
-              <ControlPoint Id="GfrBvdbPMmHMCkpKNxyDRr" Bounds="454,361" Alignment="Top" />
-              <ControlPoint Id="KIVZKdGz9E0LHxSBBDFdYb" Bounds="491,361" Alignment="Top" />
-              <ControlPoint Id="FOfNeXht6XCPaxc3ggUat2" Bounds="539,361" Alignment="Top" />
-              <ControlPoint Id="VQxZ9ubES3WM7EoiWISmpd" Bounds="578,361" Alignment="Top" />
+              <ControlPoint Id="VdovG9ZaPcjPfys5cNqw2S" Bounds="420,710" Alignment="Bottom" />
+              <ControlPoint Id="GfrBvdbPMmHMCkpKNxyDRr" Bounds="454,360" Alignment="Top" />
+              <ControlPoint Id="KIVZKdGz9E0LHxSBBDFdYb" Bounds="491,360" Alignment="Top" />
+              <ControlPoint Id="FOfNeXht6XCPaxc3ggUat2" Bounds="539,360" Alignment="Top" />
+              <ControlPoint Id="VQxZ9ubES3WM7EoiWISmpd" Bounds="569,360" Alignment="Top" />
+              <ControlPoint Id="D8ebEVJc5cLOGQGVSQkb8A" Bounds="642,360" Alignment="Top" />
+              <ControlPoint Id="G3cHmKRjp5bLWNBjrdqE9b" Bounds="739,360" Alignment="Top" />
             </Node>
+            <ControlPoint Id="SoCkDfE6Pf0PUpf3MWSbPg" Bounds="790,307" />
+            <ControlPoint Id="BtnhCIWrnPBO3CjI0gE57x" Bounds="877,306" />
           </Canvas>
           <Patch Id="DlB0IjJCQozLfbTu047UzX" Name="Create" ParticipatingElements="Ctj9FOIPEZhOHgnPc6fXso" />
           <Patch Id="U6x7KsJjcHmPjIX6cr9NBn" Name="Update">
@@ -130,6 +152,8 @@
             <Pin Id="EJP1rHdqixDPTjega23b9I" Name="Enable GPU" Kind="InputPin" Bounds="651,327" />
             <Pin Id="K5s0OFo8Re9MBMkpH7GGCM" Name="Enable HDD" Kind="InputPin" Bounds="648,438" />
             <Pin Id="CBtiAPkCsRtOcl0X1nc2fO" Name="Enable Mainboard" Kind="InputPin" Bounds="646,504" />
+            <Pin Id="TpA7fWdrrCsPcMTYNtYI22" Name="Enable RAM" Kind="InputPin" Bounds="807,310" />
+            <Pin Id="HeXSv87VB5oP3idx7rzq2M" Name="Enable Network" Kind="InputPin" Bounds="877,306" />
           </Patch>
           <ProcessDefinition Id="DZ7CCZLR6kZNqlAwLaF1W4">
             <Fragment Id="C6S9FL4pZywOGhGNB1kbqD" Patch="DlB0IjJCQozLfbTu047UzX" Enabled="true" />
@@ -148,7 +172,7 @@
           <Link Id="SCpD1O7zlGmNyhRd3ebhDv" Ids="CBtiAPkCsRtOcl0X1nc2fO,SPKQnerShXZNicORR6Olxf" IsHidden="true" />
           <Link Id="OG5REof8fyhNjIEyyHGM9W" Ids="UeHm21ttPoVPbkZI2wSoLb,SeWphGpjwhTMoMqc06gyw8" />
           <Link Id="DSzkUCYMqb9NV42OUv7Pv9" Ids="IShM1BUJR9pLFge67n6VxN,DWf3LhyAMT5NzwJWG151oZ" />
-          <Link Id="OGkyxrE1Jj2LbwjfTwN4gD" Ids="KSv0xMajgi9LLa4rl0e56Z,PbJ2vGq5IiQPBD85STV2oX" />
+          <Link Id="OGkyxrE1Jj2LbwjfTwN4gD" Ids="KSv0xMajgi9LLa4rl0e56Z,GHkovm4ptaLOOvuxV1Fqgz" />
           <Link Id="AeYu0vPeMICMyzU1V5FTqY" Ids="MHPLerd3RBUO94ZwiHwJCe,BSC8q9m7NwIMkkEpCDDt69" />
           <Link Id="DU9clMlfzvFQYnhqqGLG7W" Ids="CkW8g6WQwQCMn7pK7WFZV5,VdovG9ZaPcjPfys5cNqw2S" />
           <Link Id="GkJazI2WRjTQZ4RpuVWlsk" Ids="VdovG9ZaPcjPfys5cNqw2S,NHumWKSP1W1ONYVD4jjAQd" />
@@ -160,6 +184,14 @@
           <Link Id="CLBhdCBwQ1iOQ01HjrVpLx" Ids="FOfNeXht6XCPaxc3ggUat2,PqyQgqZx0oFP26EmWE7v4T" />
           <Link Id="QYVsCcK4INbQca8TQrqgR6" Ids="SPKQnerShXZNicORR6Olxf,VQxZ9ubES3WM7EoiWISmpd" />
           <Link Id="AkFZKPU0d6FLctkmWTC9SW" Ids="VQxZ9ubES3WM7EoiWISmpd,IUtVKv46Qh1PjHzgbJNgUn" />
+          <Link Id="IaBtVy8bTndPjc5FhYFmOT" Ids="EKNNkVmicCzPNd438PXot4,IfzrrMBkNODQR1HNoO6bD4" />
+          <Link Id="AggyHQ0q1DHLePE8uYwPT8" Ids="D8kFVYo8AksMxvWPAA5kLO,PbJ2vGq5IiQPBD85STV2oX" />
+          <Link Id="HkofUeWpftOLHwLkKp8PLZ" Ids="D8ebEVJc5cLOGQGVSQkb8A,P9QWksC0JRIQKXGV7LucED" />
+          <Link Id="IwxwzawQfb7NVNM1SYSiDT" Ids="SoCkDfE6Pf0PUpf3MWSbPg,D8ebEVJc5cLOGQGVSQkb8A" />
+          <Link Id="Tsx64AD5vAcOlDDSBtEmil" Ids="TpA7fWdrrCsPcMTYNtYI22,SoCkDfE6Pf0PUpf3MWSbPg" IsHidden="true" />
+          <Link Id="RT7WNVfG2hWMj2mUget59d" Ids="G3cHmKRjp5bLWNBjrdqE9b,EaVIUndhsCzPCGXaCbiAWN" />
+          <Link Id="VKcQxBrTlSdOI0ohHF4jQt" Ids="BtnhCIWrnPBO3CjI0gE57x,G3cHmKRjp5bLWNBjrdqE9b" />
+          <Link Id="VVMYYGERjgIMKHctyq9uyo" Ids="HeXSv87VB5oP3idx7rzq2M,BtnhCIWrnPBO3CjI0gE57x" IsHidden="true" />
         </Patch>
       </Node>
       <!--
