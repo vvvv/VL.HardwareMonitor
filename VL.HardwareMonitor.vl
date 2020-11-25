@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DulD1h04j4MLgrnPG0wfwm" Version="0.93">
+<Document xmlns:p="property" Id="DulD1h04j4MLgrnPG0wfwm" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="ULfF0GFZsFSQP9EjO9jmmf" Location="VL.Core" Version="2020.2.2" />
+  <NugetDependency Id="IWXWuKIn35WMnXZQNpRC60" Location="VL.CoreLib" Version="2020.2.2" />
+  <PlatformDependency Id="On0hiR2LmX5L7fMpIpIGvN" Location="System.Runtime" />
   <Patch Id="GDbpnUnWR78PzhHHNEqlCk">
     <Canvas Id="SgBG6X8qhsELaLh70Ou0rk" DefaultCategory="System" CanvasType="FullCategory">
       <!--
@@ -46,9 +49,9 @@
             <ControlPoint Id="IUPORbvYyKLOZ3kaoGuaXO" Bounds="602,307" />
             <ControlPoint Id="SPKQnerShXZNicORR6Olxf" Bounds="687,307" />
             <Node Bounds="358,354,404,362" Id="TVwZUXUhahOOR68KlrEycw">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <Choice Kind="ApplicationStatefulRegion" Name="Cache" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="H249eUqxZyzMSfqDH6kRWf" Name="Force" Kind="InputPin" />
@@ -73,7 +76,7 @@
                     <Choice Kind="OperationCallFlag" Name="SetCPUEnabled" />
                   </p:NodeReference>
                   <Pin Id="LxoZCdm8PuMLcfbj6c8dIx" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="L4SUVCFohXpPBRz5FTw7lK" Name="Value" Kind="InputPin" DefaultValue="true">
+                  <Pin Id="L4SUVCFohXpPBRz5FTw7lK" Name="Value" Kind="InputPin" DefaultValue="True">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
@@ -86,7 +89,7 @@
                     <Choice Kind="OperationCallFlag" Name="SetGPUEnabled" />
                   </p:NodeReference>
                   <Pin Id="SeWphGpjwhTMoMqc06gyw8" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="SeDZobc4MYqOD1zSSsaedo" Name="Value" Kind="InputPin" DefaultValue="true">
+                  <Pin Id="SeDZobc4MYqOD1zSSsaedo" Name="Value" Kind="InputPin" DefaultValue="True">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Boolean" />
                     </p:TypeAnnotation>
@@ -144,7 +147,7 @@
           <Patch Id="DlB0IjJCQozLfbTu047UzX" Name="Create" ParticipatingElements="Ctj9FOIPEZhOHgnPc6fXso" />
           <Patch Id="U6x7KsJjcHmPjIX6cr9NBn" Name="Update">
             <Pin Id="O5PZO7s5n6GOp7QvhjvCc2" Name="Hardware" Kind="OutputPin" Bounds="566,507" />
-            <Pin Id="Hg7zSd5rbykNnQLCZV7Nkl" Name="Enable CPU" Kind="InputPin" Bounds="604,299" DefaultValue="true">
+            <Pin Id="Hg7zSd5rbykNnQLCZV7Nkl" Name="Enable CPU" Kind="InputPin" Bounds="604,299" DefaultValue="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -220,16 +223,6 @@
               <Pin Id="Oqaxxsz7UqsQHWZV4PBXQ0" Name="Result" Kind="OutputPin" />
               <Pin Id="TEjqVjVzsxbOLfqHFD2f9d" Name="In Progress" Kind="OutputPin" />
               <Patch Id="UHpLwVvBfYwNZNZFR7zaGE" ManuallySortedPins="true">
-                <Patch Id="BYmRLJh4Q4FN7lRMsnKe1A" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="CtWNvBqYxSlNVZgDZy5ILW" Name="Update" ManuallySortedPins="true">
-                  <Pin Id="IEgRyQjCzaNOXvnz5BTR8o" Name="Input 1" Kind="InputPin" />
-                  <Pin Id="HSCDN2BIpogM9487iy3BCC" Name="Output" Kind="OutputPin" />
-                  <Pin Id="To4EXvv4uGNMZQnZFVDayx" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
-                    <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
-                      <Choice Kind="TypeFlag" Name="HardwareType" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                </Patch>
                 <ControlPoint Id="JNmjButyGDuM2z7YLCd25v" Bounds="373,157" />
                 <ControlPoint Id="ITtpwtngHklMnkQxZ9Ob8c" Bounds="472,991" />
                 <Node Bounds="401,185,125,136" Id="U3SKP6kOnFoOXvcUTvrZWm">
@@ -310,12 +303,15 @@
                   <Pin Id="O1xCneYUGmUOJLHOmAfM4J" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="425,692,146,231" Id="McPfY4kP06hOJLUX3UJ9tT">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="JhaFMPZ2bJoPmrFmW1hpnk" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="EoY2tMpuvPROsI8u3tjInP" Bounds="440,698" Alignment="Top" />
+                  <ControlPoint Id="NmT31VhaXCPPTkMqGxeLSs" Bounds="534,917" Alignment="Bottom" />
+                  <ControlPoint Id="VE2xJGJYi5dMt39ZnKXvpS" Bounds="456,917" Alignment="Bottom" />
                   <Patch Id="KzwHrXNockoLIt8ZWuqNnq" ManuallySortedPins="true">
                     <Patch Id="CSnU1Y5lilaM9aRbGWXkzx" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="T0494I5X2Q3PflHID7q0Ei" Name="Update" ManuallySortedPins="true" />
@@ -341,7 +337,7 @@
                       <Pin Id="LJVknHPMtddQDIWXQZm7qO" Name="Name" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="477,826,82,76" Id="KS7q4PVKkKpNnn3GhFg8yM">
-                      <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="If" />
                         <FullNameCategoryReference ID="Primitive" />
@@ -365,7 +361,7 @@
                       <ControlPoint Id="Jwb5aedtJazQFN2ntmY4Ht" Bounds="533,832" Alignment="Top" />
                     </Node>
                     <Node Bounds="489,776,52,22" Id="GQUg7YMdOrGNTgIfVCf7eB">
-                      <p:NodeReference LastCategoryFullName="System.Nullable`1" LastSymbolSource="System.Runtime.dll">
+                      <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="HasValue" />
                       </p:NodeReference>
@@ -374,9 +370,6 @@
                       <Pin Id="Ugq4iYgmB91M3lx16lvrxf" Name="Has Value" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="EoY2tMpuvPROsI8u3tjInP" Bounds="440,698" Alignment="Top" />
-                  <ControlPoint Id="NmT31VhaXCPPTkMqGxeLSs" Bounds="534,917" Alignment="Bottom" />
-                  <ControlPoint Id="VE2xJGJYi5dMt39ZnKXvpS" Bounds="456,917" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="437,535,123,136" Id="GqGVINPjiEOOy7HbCWKGvP">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
@@ -425,6 +418,11 @@
                   <Pin Id="LrBRtgdSj81PkF6Hji0YNm" Name="Item 2" Kind="InputPin" />
                   <Pin Id="OWyPrtCgRulPQwYH9JuQXM" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Patch Id="BYmRLJh4Q4FN7lRMsnKe1A" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="CtWNvBqYxSlNVZgDZy5ILW" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="IEgRyQjCzaNOXvnz5BTR8o" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="HSCDN2BIpogM9487iy3BCC" Name="Output" Kind="OutputPin" />
+                </Patch>
               </Patch>
             </Node>
             <ControlPoint Id="BqIDbh5SgK2QDBhbVVsi5I" Bounds="605,226" />
@@ -456,13 +454,13 @@
           <Patch Id="RUlMZOIjvv8Oqjb1m9MoVF" Name="Create" />
           <Patch Id="RrvHBhMKANOMxEGahVLiDe" Name="Update" ManuallySortedPins="true">
             <Pin Id="Th8r3tubIrQNwZP9RFxkiZ" Name="Input" Kind="InputPin" Bounds="361,132" />
-            <Pin Id="Fsh6Pw6hgGDO3yRp9dbi50" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="&quot;CPU&quot;">
+            <Pin Id="Fsh6Pw6hgGDO3yRp9dbi50" Name="Type" Kind="InputPin" Bounds="499,366" DefaultValue="CPU">
               <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                 <Choice Kind="TypeFlag" Name="HardwareType" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="HZwGPhoSB4eQRaLp5kRcV6" Name="Index" Kind="InputPin" Bounds="599,432" />
-            <Pin Id="KZYPWfUWMmvMbOl6QBMb6R" Name="Sensor Type" Kind="InputPin" Bounds="665,484" DefaultValue="&quot;Temperature&quot;">
+            <Pin Id="KZYPWfUWMmvMbOl6QBMb6R" Name="Sensor Type" Kind="InputPin" Bounds="665,484" DefaultValue="Temperature">
               <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastSymbolSource="OpenHardwareMonitorLib.dll">
                 <Choice Kind="TypeFlag" Name="SensorType" />
               </p:TypeAnnotation>
@@ -528,9 +526,26 @@
         </Patch>
       </Node>
     </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="CCMLG1VwxR6MTSiwTssyIz">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="KqYHNiZRbJnNdI2SMmRYWd">
+        <Canvas Id="Hsard4ZzhtmQANrmuOuG36" BordersChecked="false" CanvasType="Group" />
+        <Patch Id="GZhqywO8oExQLbZ0D5LVtV" Name="Create" />
+        <Patch Id="FbQ3AEE0w9pMFELVzQbEwB" Name="Update" />
+        <ProcessDefinition Id="P1KEHPLJPb8LNLfegCQPed">
+          <Fragment Id="V2ZJyceggilO8W0K3LpRzF" Patch="GZhqywO8oExQLbZ0D5LVtV" Enabled="true" />
+          <Fragment Id="SRDnNj9eP9AOz8FVt4xOVp" Patch="FbQ3AEE0w9pMFELVzQbEwB" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
   </Patch>
-  <NugetDependency Id="ULfF0GFZsFSQP9EjO9jmmf" Location="VL.Core" Version="0.93.72-g750e4408d0" />
-  <NugetDependency Id="IWXWuKIn35WMnXZQNpRC60" Location="VL.CoreLib" Version="0.93.72-g750e4408d0" />
-  <PlatformDependency Id="On0hiR2LmX5L7fMpIpIGvN" Location="System.Runtime" />
-  <PlatformDependency Id="OG2xSgcSWoTLx5ePYxLNFp" Location="./src/bin/Release/OpenHardwareMonitorLib.dll" />
+  <NugetDependency Id="FlfPmkOJK52NLBYVBl3E8w" Location="LibreHardwareMonitorLibCore" Version="1.0.3" />
 </Document>
