@@ -12,7 +12,7 @@ In order to use this library with VL, you have to install the nuget that is avai
 nuget install VL.HardwareMonitor
 ```
 
-Once the VL.Hardware monitor nuget is installed and referenced in your VL document, you'll see the `HardwareMonitor` and `GetHardwareInfo` nodes under the `System` category in the nodebrowser.
+Once the VL.HardwareMonitor nuget is installed and referenced in your VL document, you'll see the `HardwareMonitor` and `GetHardwareInfo` nodes under the `System` category in the nodebrowser.
 
 An overview help patch is available via the Help Browser!
 
