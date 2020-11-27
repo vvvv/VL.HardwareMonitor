@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.HardwareMonitor</id>
+    <version>1.0.0-preview01</version>
+    <title>VL.HardwareMonitor</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.HardwareMonitor</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>VL nodes interfacing LibreHardwareMonitor</summary>
+    <description>VL nodes interfacing LibreHardwareMonitor</description>
+    <tags>VL, hardware, monitor</tags>
+	<license type="expression">LGPL-3.0-only</license>
+    <dependencies>
+		<dependency id="LibreHardwareMonitorLibCore" version="1.0.3" />
+    </dependencies>
+    <icon>nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+	<file src="..\nugeticon.png" target="" />
+  </files>
+</package>
