@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.HardwareMonitor</id>
-    <version>1.0.0-preview01</version>
+    <version>1.0.0-alpha2</version>
     <title>VL.HardwareMonitor</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -10,10 +10,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>VL nodes interfacing LibreHardwareMonitor</summary>
     <description>VL nodes interfacing LibreHardwareMonitor</description>
-    <tags>VL, hardware, monitor</tags>
+    <tags>VL, hardware, monitor, sensor</tags>
 	<license type="expression">LGPL-3.0-only</license>
     <dependencies>
-		<dependency id="LibreHardwareMonitorLibCore" version="1.0.3" />
+		<dependency id="LibreHardwareMonitorLib" version="0.9.6" />
     </dependencies>
     <icon>nugeticon.png</icon>
   </metadata>
