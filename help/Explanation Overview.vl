@@ -15,10 +15,10 @@
       </p:NodeReference>
       <Patch Id="VQcMsJW6JXaMlOj7BBF8Ir">
         <Canvas Id="OoxEI8DwUX1OcsTfQ0nZfS" CanvasType="Group">
-          <Node Bounds="17,500,105,19" Id="GE7CnoNuibONHTslNFMkui">
+          <Node Bounds="117,575,105,19" Id="GE7CnoNuibONHTslNFMkui">
             <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CPUSensors" />
+              <Choice Kind="ProcessAppFlag" Name="CpuSensors" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="GUMaK2WrxwfPMKGRSaPMrl" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -33,9 +33,9 @@
             <Pin Id="C65UIRrhvUuPDHIntNxsSJ" Name="Sensor Names" Kind="OutputPin" />
             <Pin Id="CEBo4Z61ahDNPZo87wW4my" Name="Sensor Values" Kind="OutputPin" />
           </Node>
-          <Pad Id="Jdx0uam4ek0Pmy7PaS9QRM" Comment="Sensor Values" Bounds="197,571,54,49" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="C53WaDb13qZQHcjkJyk8Sb" Comment="Sensor Names" Bounds="19,572,87,49" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QEI5m35dntDOvDHlCB1NpC" Comment="Update" Bounds="119,451,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Jdx0uam4ek0Pmy7PaS9QRM" Comment="Sensor Values" Bounds="297,646,54,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="C53WaDb13qZQHcjkJyk8Sb" Comment="Sensor Names" Bounds="119,647,87,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QEI5m35dntDOvDHlCB1NpC" Comment="Update" Bounds="219,526,40,19" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -43,12 +43,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TqUigQWhQPPNUZeLi6FF9s" Comment="Sensor Type" Bounds="86,421,89,15" ShowValueBox="true" isIOBox="true" Value="Load">
+          <Pad Id="TqUigQWhQPPNUZeLi6FF9s" Comment="Sensor Type" Bounds="186,496,89,15" ShowValueBox="true" isIOBox="true" Value="Load">
             <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastDependency="OpenHardwareMonitorLib.dll">
               <Choice Kind="TypeFlag" Name="SensorType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LDVEK4rCNgxPajW0iJ2Yw4" Bounds="264,132,283,41" ShowValueBox="true" isIOBox="true" Value="Some sensors need the program to be started with admin rights!">
+          <Pad Id="LDVEK4rCNgxPajW0iJ2Yw4" Bounds="119,129,283,41" ShowValueBox="true" isIOBox="true" Value="Some sensors need the program to be started with admin rights!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -57,11 +57,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="Cc8lpU4tXOoPt66f7f7ySH" Name="Note" Bounds="263,91,291,80" />
-          <Node Bounds="17,175,90,19" Id="OKlXVfnGe8nPiMZ4e4CG34">
+          <Overlay Id="Cc8lpU4tXOoPt66f7f7ySH" Name="Note" Bounds="118,88,291,80" />
+          <Node Bounds="117,250,90,19" Id="OKlXVfnGe8nPiMZ4e4CG34">
             <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="CPUMonitor" />
+              <Choice Kind="ProcessAppFlag" Name="CpuMonitor" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Hn0ICuKhe3kLTSVjIX6sP8" Name="Output" Kind="OutputPin" />
@@ -70,8 +70,8 @@
             <Pin Id="QqZySoeGPUFQBDS4Wgz2fZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CQwLgkLgNvINI0zqbFxqYD" Name="Update" Kind="InputPin" />
           </Node>
-          <Pad Id="HxFr8Xi1xOOLjQenXxZvzt" Comment="Valid Sensors" Bounds="104,215,71,95" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="59,340,52,19" Id="LmelsgnHEGFLbcZB5gFs8k">
+          <Pad Id="HxFr8Xi1xOOLjQenXxZvzt" Comment="Valid Sensors" Bounds="204,290,71,95" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="159,415,52,19" Id="LmelsgnHEGFLbcZB5gFs8k">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -82,8 +82,134 @@
             <Pin Id="N4tzT7OldVgP4aFvsgyfT8" Name="Index" Kind="InputPin" />
             <Pin Id="Cr3EhqNaCiCNVZGIfhc562" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="HkbF3EQdN6tNYyqETL11IB" Comment="" Bounds="81,380,140,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BLw7VhS1z3QPDWqLRa8swR" Comment="Index" Bounds="150,340,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="HkbF3EQdN6tNYyqETL11IB" Comment="" Bounds="181,455,140,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BLw7VhS1z3QPDWqLRa8swR" Comment="Index" Bounds="250,415,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="522,575,105,19" Id="MqHZeuRMNlqOWwWdwd2aGF">
+            <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MemorySensors" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="VgDmsxDuPSQNFCJ3kiO6cV" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="R3EAIRBk14PQMOj5RExtdp" Name="Input" Kind="InputPin" />
+            <Pin Id="CW6mvvzB1euLLZQfUtX5Pe" Name="Device Name" Kind="InputPin" />
+            <Pin Id="LGCfhoDtYWIO33QZz3Gz4B" Name="Sensor Type" Kind="InputPin" DefaultValue="Power">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastDependency="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="SensorType" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JCHJPvUMKgZM1xrtyZxbUn" Name="Update" Kind="InputPin" />
+            <Pin Id="E9qoQjJI2CJNebjcZ5eYii" Name="Sensor Names" Kind="OutputPin" />
+            <Pin Id="CJz6sonYyT4LXiDB61iiFt" Name="Sensor Values" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FYgMZeDHjVmNInlp0b0TOM" Comment="Sensor Values" Bounds="702,646,54,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PNYQuluBd2GMPY5mM3lCKl" Comment="Sensor Names" Bounds="524,647,87,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RaWAwFnk58kMK6T9W9WD2W" Comment="Update" Bounds="624,526,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PODIATYNsL5OOkve2zeqhU" Comment="Sensor Type" Bounds="591,496,89,15" ShowValueBox="true" isIOBox="true" Value="Load">
+            <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastDependency="OpenHardwareMonitorLib.dll">
+              <Choice Kind="TypeFlag" Name="SensorType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="522,250,90,19" Id="IGUu6BhTTt7MlUmQTr9K7p">
+            <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MemoryMonitor" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="GYnS7Jya0zrPCQYDFFTpEo" Name="Output" Kind="OutputPin" />
+            <Pin Id="LwUS80WpC8bQLIiOZUHDuv" Name="Device Names" Kind="OutputPin" />
+            <Pin Id="IKmUVYxBnWJOAu5sLK5Jmi" Name="Valid Sensors" Kind="OutputPin" />
+            <Pin Id="LX8yv93PgfsMFERqkFwj45" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="I9vleNcyvtdQcZlyt8PEka" Name="Update" Kind="InputPin" />
+          </Node>
+          <Pad Id="Tgyx2cunVHUPNJI1TJFM33" Comment="Valid Sensors" Bounds="609,290,63,49" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="564,415,52,19" Id="LChcHLPqFAvO3aYq0ijNoq">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="LAugseXPumkM275bsZBP1b" Name="Input" Kind="StateInputPin" />
+            <Pin Id="CNOj02IHJEpLlP5F6KWy5a" Name="Default Value" Kind="InputPin" />
+            <Pin Id="ERz1IbCaD9NPa8FzahYcSF" Name="Index" Kind="InputPin" />
+            <Pin Id="CfSMN8ZodHNNzFTDhJ10RV" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VZNiP6ZEWxhPxSwAeLXmQ1" Comment="" Bounds="586,455,140,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VWgbNAo5rdYLiswJedFwgZ" Comment="Index" Bounds="655,415,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="912,575,105,19" Id="INebFyUnS7xQV9gVJZWqTH">
+            <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BatterySensors" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="LTb9EDvKVmELBPeufS1d4b" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NNX3EBnRbGdMSTM0moOIh7" Name="Input" Kind="InputPin" />
+            <Pin Id="IBjE5gu9OLpQMknB0GhAHx" Name="Device Name" Kind="InputPin" />
+            <Pin Id="C1GD7g5W6JRQEYCiKL22ex" Name="Sensor Type" Kind="InputPin" DefaultValue="Power">
+              <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastDependency="OpenHardwareMonitorLib.dll">
+                <Choice Kind="TypeFlag" Name="SensorType" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="FtV4CzBwNFvOSmqNTAYWdR" Name="Update" Kind="InputPin" />
+            <Pin Id="Gg9CX1YS6aDOtDhCQLHAYW" Name="Sensor Names" Kind="OutputPin" />
+            <Pin Id="R5wmPhNE8c9QGulhTdGhzt" Name="Sensor Values" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SxjPDbxbN5zMcaWC1vJmyf" Comment="Sensor Values" Bounds="1092,646,54,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Jr43PVZGm4eOwAPlzRR7eJ" Comment="Sensor Names" Bounds="914,647,87,49" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MilBgJ5WWCvNCPAJxmN3F8" Comment="Update" Bounds="1014,526,40,19" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RYnpvSFygtiOvKE7UJEhhh" Comment="Sensor Type" Bounds="981,496,89,15" ShowValueBox="true" isIOBox="true" Value="Level">
+            <p:TypeAnnotation LastCategoryFullName="OpenHardwareMonitor.Hardware" LastDependency="OpenHardwareMonitorLib.dll">
+              <Choice Kind="TypeFlag" Name="SensorType" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="912,250,90,19" Id="HyEoZCUavx5QC45kB1B6OS">
+            <p:NodeReference LastCategoryFullName="System" LastDependency="VL.HardwareMonitor.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BatteryMonitor" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="IqfcselkcWZMJuyCR3G4LM" Name="Output" Kind="OutputPin" />
+            <Pin Id="TjfXOQvtnlwOF0CyuVlGM2" Name="Device Names" Kind="OutputPin" />
+            <Pin Id="C5LFGRFYHwdNctMmObd8Wk" Name="Valid Sensors" Kind="OutputPin" />
+            <Pin Id="NhR3l1OeJIePk8QboEebo5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CCLCRqeBOyWNc3gBSc7Vsl" Name="Update" Kind="InputPin" />
+          </Node>
+          <Pad Id="VBqpZmrRAIqOUCynWnaVqc" Comment="Valid Sensors" Bounds="999,290,63,49" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="954,415,52,19" Id="Uk6vnXrAiPKLb7o6Gidwez">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="GetSlice" />
+            </p:NodeReference>
+            <Pin Id="IIDnw1xHc6ZPCWMYXeE0oj" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OZx2QVqJ3bnM3vvQzRHB7M" Name="Default Value" Kind="InputPin" />
+            <Pin Id="BAo2HRjNFHYLOfs772F5Oz" Name="Index" Kind="InputPin" />
+            <Pin Id="KcBhvNIBrOkLNSN4vtFWHB" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VBldOppFendMuxyBR6CyDr" Comment="" Bounds="976,455,140,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OnqZJKkejQFLX3xAutJmvO" Comment="Index" Bounds="1045,415,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -105,6 +231,26 @@
         <Link Id="IbILyHegh40OYDykksh7uH" Ids="Cr3EhqNaCiCNVZGIfhc562,CTiKWtnPeYiNxTnfplnJgf" />
         <Link Id="LeNuLkmqDckOBzfraalwGb" Ids="Cr3EhqNaCiCNVZGIfhc562,HkbF3EQdN6tNYyqETL11IB" />
         <Link Id="BYOUvyOmTkaN5LtGj6P0e5" Ids="BLw7VhS1z3QPDWqLRa8swR,N4tzT7OldVgP4aFvsgyfT8" />
+        <Link Id="NY4i1h8oVqkP6134Eizwow" Ids="CJz6sonYyT4LXiDB61iiFt,FYgMZeDHjVmNInlp0b0TOM" />
+        <Link Id="IxHahGMyg6OP0mMYf6q1uH" Ids="E9qoQjJI2CJNebjcZ5eYii,PNYQuluBd2GMPY5mM3lCKl" />
+        <Link Id="TQWHIRXWnz2MckRH0xLle6" Ids="PODIATYNsL5OOkve2zeqhU,LGCfhoDtYWIO33QZz3Gz4B" />
+        <Link Id="VqTo1GM9PoBMuSl8BcVbZp" Ids="RaWAwFnk58kMK6T9W9WD2W,JCHJPvUMKgZM1xrtyZxbUn" />
+        <Link Id="DV3IpUjsI8TPmMQX71kGo2" Ids="GYnS7Jya0zrPCQYDFFTpEo,R3EAIRBk14PQMOj5RExtdp" />
+        <Link Id="BIH8udbWaUmQEafQTX58Aa" Ids="IKmUVYxBnWJOAu5sLK5Jmi,Tgyx2cunVHUPNJI1TJFM33" />
+        <Link Id="VuiTCSua7nSN8Fm7pQxiMB" Ids="LwUS80WpC8bQLIiOZUHDuv,LAugseXPumkM275bsZBP1b" />
+        <Link Id="UcwcL6LNlQELMohyh9HcoI" Ids="CfSMN8ZodHNNzFTDhJ10RV,CW6mvvzB1euLLZQfUtX5Pe" />
+        <Link Id="E3y5q79lEURO7W7hMTp9ol" Ids="CfSMN8ZodHNNzFTDhJ10RV,VZNiP6ZEWxhPxSwAeLXmQ1" />
+        <Link Id="NmfBh89k3jCNz2DvU4MKTx" Ids="VWgbNAo5rdYLiswJedFwgZ,ERz1IbCaD9NPa8FzahYcSF" />
+        <Link Id="TM1ba4mjGMFPddgVLs7Za5" Ids="R5wmPhNE8c9QGulhTdGhzt,SxjPDbxbN5zMcaWC1vJmyf" />
+        <Link Id="NJ6eG4slNIJPZWFWxREoPE" Ids="Gg9CX1YS6aDOtDhCQLHAYW,Jr43PVZGm4eOwAPlzRR7eJ" />
+        <Link Id="M7c2xLMiqATL0w1hHCmbfJ" Ids="RYnpvSFygtiOvKE7UJEhhh,C1GD7g5W6JRQEYCiKL22ex" />
+        <Link Id="KgzFDmnwgeMLr5iKu6BboS" Ids="MilBgJ5WWCvNCPAJxmN3F8,FtV4CzBwNFvOSmqNTAYWdR" />
+        <Link Id="KAEL4o0KjJcLcLKCtc39mG" Ids="IqfcselkcWZMJuyCR3G4LM,NNX3EBnRbGdMSTM0moOIh7" />
+        <Link Id="TQfNQ00cILYPpI5JsypEdJ" Ids="C5LFGRFYHwdNctMmObd8Wk,VBqpZmrRAIqOUCynWnaVqc" />
+        <Link Id="Ke7HnBG2BvKPQntaPybwdp" Ids="TjfXOQvtnlwOF0CyuVlGM2,IIDnw1xHc6ZPCWMYXeE0oj" />
+        <Link Id="PpRos2aChtQQHA4aFeczIj" Ids="KcBhvNIBrOkLNSN4vtFWHB,IBjE5gu9OLpQMknB0GhAHx" />
+        <Link Id="NLI04peNJcFQOifWbuEXrT" Ids="KcBhvNIBrOkLNSN4vtFWHB,VBldOppFendMuxyBR6CyDr" />
+        <Link Id="Si7NJ4G2kmSPIVmgjqxcQI" Ids="OnqZJKkejQFLX3xAutJmvO,BAo2HRjNFHYLOfs772F5Oz" />
       </Patch>
     </Node>
   </Patch>
